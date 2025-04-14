@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Analytics window -->
+  <rect x="50" y="40" width="700" height="420" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+  
+  <!-- Analytics header -->
+  <rect x="50" y="40" width="700" height="50" rx="8 8 0 0" fill="#4A86E8"/>
+  
+  <!-- Logo and title -->
+  <circle cx="80" cy="65" r="15" fill="#F5B700"/>
+  <path d="M75 65C73 63 72 62 72 60C72 58 73 56 75 55C77 56 78 58 78 60C78 62 77 63 75 65Z" fill="#FFFFFF"/>
+  <path d="M85 65C87 63 88 62 88 60C88 58 87 56 85 55C83 56 82 58 82 60C82 62 83 63 85 65Z" fill="#FFFFFF"/>
+  <text x="105" y="70" font-family="'Montserrat', sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Аналитика угроз CorgPhish</text>
+  
+  <!-- Tab navigation -->
+  <rect x="50" y="90" width="700" height="40" fill="#F5F5F5"/>
+  <rect x="330" y="90" width="140" height="40" fill="#FFFFFF"/>
+  <text x="120" y="115" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#666666">Основные</text>
+  <text x="260" y="115" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#666666">Безопасность</text>
+  <text x="400" y="115" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#4A86E8">Аналитика</text>
+  <text x="540" y="115" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#666666">API</text>
+  <text x="680" y="115" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#666666">О расширении</text>
+  
+  <!-- Analytics content -->
+  <rect x="70" y="150" width="660" height="290" rx="4" fill="#FFFFFF"/>
+  
+  <!-- Stats overview -->
+  <rect x="90" y="170" width="200" height="80" rx="4" fill="#F8F9FA"/>
+  <text x="105" y="190" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" fill="#333333">Проверено сайтов</text>
+  <text x="190" y="225" font-family="'Montserrat', sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#4A86E8">1,458</text>
+  
+  <rect x="310" y="170" width="200" height="80" rx="4" fill="#F8F9FA"/>
+  <text x="325" y="190" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" fill="#333333">Обнаружено фишинговых</text>
+  <text x="410" y="225" font-family="'Montserrat', sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#FF4D4D">32</text>
+  
+  <rect x="530" y="170" width="200" height="80" rx="4" fill="#F8F9FA"/>
+  <text x="545" y="190" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" fill="#333333">Средний риск</text>
+  <text x="630" y="225" font-family="'Montserrat', sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#F5B700">15.7%</text>
+  
+  <!-- Phishing features chart -->
+  <rect x="90" y="270" width="310" height="150" rx="4" fill="#F8F9FA"/>
+  <text x="105" y="290" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" fill="#333333">Распределение факторов риска</text>
+  
+  <!-- Bar chart -->
+  <rect x="105" y="310" width="240" height="15" rx="2" fill="#FF4D4D"/>
+  <text x="350" y="322" font-family="'Montserrat', sans-serif" font-size="10" font-weight="500" fill="#333333">98%</text>
+  <text x="105" y="322" font-family="'Montserrat', sans-serif" font-size="10" font-weight="500" fill="#FFFFFF">URL похож на известный бренд</text>
+  
+  <rect x="105" y="335" width="220" height="15" rx="2" fill="#FF4D4D"/>
+  <text x="330" y="347" font-family="'Montserrat', sans-serif" font-size="10" font-weight="500" fill="#333333">92%</text>
+  <text x="105" y="347" font-family="'Montserrat', sans-serif" font-size="10" font-weight="500" fill="#FFFFFF">Сбор чувствительных данных</text>
+  
+  <rect x="105" y="360" width="180" height="15" rx="2" fill="#F5B700"/>
+  <text x="290" y="372" font-family="'Montserrat', sans-serif" font-size="10" font-weight="500" fill="#333333">75%</text>
+  <text x="105" y="372" font-family="'Montserrat', sans-serif" font-size="10" font-weight="500" fill="#333333">Скрытые элементы формы</text>
+  
+  <rect x="105" y="385" width="130" height="15" rx="2" fill="#F5B700"/>
+  <text x="240" y="397" font-family="'Montserrat', sans-serif" font-size="10" font-weight="500" fill="#333333">54%</text>
+  <text x="105" y="397" font-family="'Montserrat', sans-serif" font-size="10" font-weight="500" fill="#333333">Недавняя регистрация домена</text>
+  
+  <!-- Geo distribution -->
+  <rect x="420" y="270" width="310" height="150" rx="4" fill="#F8F9FA"/>
+  <text x="435" y="290" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" fill="#333333">Географическое распределение угроз</text>
+  
+  <!-- Simple world map outline -->
+  <rect x="435" y="310" width="280" height="110" rx="2" fill="#FFFFFF"/>
+  <path d="M445 360C450 365 460 370 470 368C480 366 490 360 500 362C505 363 515 370 525 365C535 360 545 350 555 345C565 340 575 335 585 337C595 339 605 345 615 350C625 355 635 360 645 355C655 350 665 340 675 340C685 340 695 345 700 350" stroke="#CCCCCC" stroke-width="1"/>
+  
+  <!-- Heatmap dots -->
+  <circle cx="500" cy="345" r="5" fill="#FF4D4D" fill-opacity="0.7"/>
+  <circle cx="530" cy="355" r="8" fill="#FF4D4D" fill-opacity="0.7"/>
+  <circle cx="615" cy="350" r="6" fill="#FF4D4D" fill-opacity="0.7"/>
+  <circle cx="490" cy="370" r="4" fill="#F5B700" fill-opacity="0.7"/>
+  <circle cx="560" cy="335" r="4" fill="#F5B700" fill-opacity="0.7"/>
+  <circle cx="640" cy="345" r="3" fill="#F5B700" fill-opacity="0.7"/>
+  <circle cx="585" cy="360" r="7" fill="#FF4D4D" fill-opacity="0.7"/>
+  
+  <!-- Legend -->
+  <circle cx="455" cy="400" r="4" fill="#FF4D4D" fill-opacity="0.7"/>
+  <text x="465" y="403" font-family="'Montserrat', sans-serif" font-size="8" font-weight="500" fill="#333333">Высокий риск</text>
+  <circle cx="510" cy="400" r="4" fill="#F5B700" fill-opacity="0.7"/>
+  <text x="520" y="403" font-family="'Montserrat', sans-serif" font-size="8" font-weight="500" fill="#333333">Средний риск</text>
+  
+  <!-- Status bar -->
+  <rect x="50" y="450" width="700" height="10" fill="#F5F5F5"/>
+  <rect x="50" y="450" width="350" height="10" fill="#4A86E8" fill-opacity="0.3"/>
+</svg> 

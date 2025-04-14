@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузить CorgPhish - Интеллектуальная защита от фишинга</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Скачайте расширение CorgPhish для защиты от фишинговых атак. Доступно для Chrome, Firefox и других браузеров.">
+    <style>
+        .download-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin: var(--spacing-xl) 0;
+        }
+        
+        .download-card {
+            background-color: var(--background-alt);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: var(--spacing-lg);
+            text-align: center;
+            transition: var(--transition);
+        }
+        
+        .download-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .browser-logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto var(--spacing);
+        }
+        
+        .download-card h3 {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .download-card p {
+            color: var(--text-light);
+            margin-bottom: var(--spacing-md);
+            min-height: 60px;
+        }
+        
+        .download-button {
+            margin-bottom: var(--spacing);
+        }
+        
+        .version-info {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+        
+        .source-download {
+            margin-top: var(--spacing-xl);
+            padding: var(--spacing-lg);
+            background-color: var(--background-alt);
+            border-radius: var(--border-radius);
+            text-align: center;
+        }
+        
+        .source-download h3 {
+            margin-bottom: var(--spacing);
+        }
+        
+        .source-download p {
+            max-width: 800px;
+            margin: 0 auto var(--spacing-lg);
+        }
+        
+        .installation-steps {
+            margin-top: var(--spacing-xl);
+        }
+        
+        .installation-steps h2 {
+            text-align: center;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .browser-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: var(--spacing-lg);
+            gap: var(--spacing);
+        }
+        
+        .browser-tab {
+            padding: var(--spacing-sm) var(--spacing-md);
+            cursor: pointer;
+            background-color: var(--background-alt);
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+            transition: var(--transition);
+        }
+        
+        .browser-tab.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .tab-content {
+            display: none;
+            background-color: var(--background-alt);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .step {
+            display: flex;
+            margin-bottom: var(--spacing-lg);
+            gap: var(--spacing-lg);
+            align-items: flex-start;
+        }
+        
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        .step-content h3 {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .step-image {
+            margin-top: var(--spacing);
+            text-align: center;
+        }
+        
+        .step-image img {
+            max-width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/corgphish_logo.png" alt="CorgPhish Logo">
+                <h1>CorgPhish</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="features.html">Возможности</a></li>
+                    <li><a href="#" class="active">Загрузить</a></li>
+                    <li><a href="docs.html">Документация</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Загрузить CorgPhish</h1>
+            <p>Выберите версию для вашего браузера</p>
+        </div>
+    </section>
+
+    <section class="download-section">
+        <div class="container">
+            <div class="download-options">
+                <div class="download-card">
+                    <div class="browser-logo">
+                        <img src="images/chrome-logo.png" alt="Google Chrome">
+                    </div>
+                    <h3>Google Chrome</h3>
+                    <p>Расширение для самого популярного браузера. Работает также в Edge, Opera и других браузерах на основе Chromium.</p>
+                    <a href="https://github.com/physcorgi/CorgPhish/releases/latest/download/CorgPhish-v1.2.0.zip" class="btn btn-primary download-button">Скачать для Chrome</a>
+                    <div class="version-info">Версия 1.2.0 | 1.2 МБ</div>
+                </div>
+                
+                <div class="download-card">
+                    <div class="browser-logo">
+                        <img src="images/firefox-logo.png" alt="Mozilla Firefox">
+                    </div>
+                    <h3>Mozilla Firefox</h3>
+                    <p>Расширение для Firefox с полной поддержкой всех функций и сохранением конфиденциальности.</p>
+                    <a href="https://github.com/physcorgi/CorgPhish/releases/latest/download/CorgPhish-v1.2.0.zip" class="btn btn-primary download-button">Скачать для Firefox</a>
+                    <div class="version-info">Версия 1.2.0 | 1.2 МБ</div>
+                </div>
+                
+                <div class="download-card">
+                    <div class="browser-logo">
+                        <img src="images/edge-logo.png" alt="Microsoft Edge">
+                    </div>
+                    <h3>Microsoft Edge</h3>
+                    <p>Расширение для Microsoft Edge с оптимизированной производительностью и интеграцией с браузером.</p>
+                    <a href="https://github.com/physcorgi/CorgPhish/releases/latest/download/CorgPhish-v1.2.0.zip" class="btn btn-primary download-button">Скачать для Edge</a>
+                    <div class="version-info">Версия 1.2.0 | 1.2 МБ</div>
+                </div>
+            </div>
+            
+            <div class="source-download">
+                <h3>Исходный код</h3>
+                <p>Если вы разработчик или хотите внести свой вклад в проект, вы можете скачать исходный код CorgPhish с GitHub. Проект распространяется под лицензией MIT.</p>
+                <a href="https://github.com/physcorgi/CorgPhish" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="installation-steps">
+        <div class="container">
+            <h2>Инструкция по установке</h2>
+            
+            <div class="browser-tabs">
+                <div class="browser-tab active" data-tab="chrome">Chrome</div>
+                <div class="browser-tab" data-tab="firefox">Firefox</div>
+                <div class="browser-tab" data-tab="edge">Edge</div>
+            </div>
+            
+            <div class="tab-content active" id="chrome-tab">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Скачайте расширение</h3>
+                        <p>Нажмите кнопку "Скачать для Chrome" выше и сохраните файл на ваш компьютер. После завершения загрузки распакуйте ZIP-архив в удобное место.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Откройте страницу расширений</h3>
+                        <p>Введите <code>chrome://extensions</code> в адресной строке браузера и нажмите Enter.</p>
+                        <div class="step-image">
+                            <img src="images/chrome-extensions.png" alt="Chrome Extensions Page">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Включите режим разработчика</h3>
+                        <p>В правом верхнем углу страницы расширений переключите "Режим разработчика" в положение "Включено".</p>
+                        <div class="step-image">
+                            <img src="images/chrome-dev-mode.png" alt="Enable Developer Mode">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Загрузите распакованное расширение</h3>
+                        <p>Нажмите кнопку "Загрузить распакованное", выберите папку с распакованным расширением CorgPhish и нажмите "Выбрать папку".</p>
+                        <div class="step-image">
+                            <img src="images/chrome-load.png" alt="Load Unpacked Extension">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Готово!</h3>
+                        <p>Расширение CorgPhish теперь установлено и активировано в вашем браузере Chrome. Вы можете увидеть иконку расширения в панели инструментов. Щелкните по ней, чтобы открыть настройки расширения.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="firefox-tab">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Скачайте расширение</h3>
+                        <p>Нажмите кнопку "Скачать для Firefox" выше и сохраните файл на ваш компьютер. После завершения загрузки распакуйте ZIP-архив в удобное место.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Откройте страницу отладки</h3>
+                        <p>Введите <code>about:debugging#/runtime/this-firefox</code> в адресной строке браузера и нажмите Enter.</p>
+                        <div class="step-image">
+                            <img src="images/firefox-debug.png" alt="Firefox Debug Page">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Загрузите временное дополнение</h3>
+                        <p>Нажмите кнопку "Загрузить временное дополнение", перейдите в папку с распакованным расширением CorgPhish, выберите файл <code>manifest.json</code> и нажмите "Открыть".</p>
+                        <div class="step-image">
+                            <img src="images/firefox-load.png" alt="Load Temporary Add-on">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Готово!</h3>
+                        <p>Расширение CorgPhish теперь установлено в вашем браузере Firefox. Вы можете увидеть иконку расширения в панели инструментов. Щелкните по ней, чтобы открыть настройки расширения.</p>
+                        <p><strong>Примечание:</strong> Временные дополнения будут удалены при перезапуске Firefox. Для постоянной установки рекомендуется подождать официального релиза в Firefox Add-ons.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="edge-tab">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Скачайте расширение</h3>
+                        <p>Нажмите кнопку "Скачать для Edge" выше и сохраните файл на ваш компьютер. После завершения загрузки распакуйте ZIP-архив в удобное место.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Откройте страницу расширений</h3>
+                        <p>Введите <code>edge://extensions</code> в адресной строке браузера и нажмите Enter.</p>
+                        <div class="step-image">
+                            <img src="images/edge-extensions.png" alt="Edge Extensions Page">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Включите режим разработчика</h3>
+                        <p>В левом нижнем углу страницы расширений переключите "Режим разработчика" в положение "Включено".</p>
+                        <div class="step-image">
+                            <img src="images/edge-dev-mode.png" alt="Enable Developer Mode">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Загрузите распакованное расширение</h3>
+                        <p>Нажмите кнопку "Загрузить распакованное", выберите папку с распакованным расширением CorgPhish и нажмите "Выбрать папку".</p>
+                        <div class="step-image">
+                            <img src="images/edge-load.png" alt="Load Unpacked Extension">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Готово!</h3>
+                        <p>Расширение CorgPhish теперь установлено и активировано в вашем браузере Edge. Вы можете увидеть иконку расширения в панели инструментов. Щелкните по ней, чтобы открыть настройки расширения.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Получить поддержку</h2>
+            <p>Возникли проблемы при установке или использовании CorgPhish?</p>
+            <a href="contact.html" class="btn btn-primary">Свяжитесь с нами</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="images/corgphish_logo.png" alt="CorgPhish Logo">
+                        <h3>CorgPhish</h3>
+                    </div>
+                    <p>Интеллектуальная система защиты от фишинга, использующая передовые технологии для обеспечения безопасности в интернете.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="features.html">Возможности</a></li>
+                        <li><a href="download.html">Загрузить</a></li>
+                        <li><a href="docs.html">Документация</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Ресурсы</h3>
+                    <ul>
+                        <li><a href="docs.html">Руководство пользователя</a></li>
+                        <li><a href="docs.html#faq">FAQ</a></li>
+                        <li><a href="https://github.com/physcorgi/CorgPhish">GitHub</a></li>
+                        <li><a href="https://github.com/physcorgi/CorgPhish/issues">Сообщить об ошибке</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@corgphish.example.com</li>
+                        <li><i class="fab fa-github"></i> github.com/physcorgi/CorgPhish</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CorgPhish. Все права защищены.</p>
+                <ul>
+                    <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                    <li><a href="terms.html">Условия использования</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Browser tabs functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.browser-tab');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Remove active class from all tabs and content
+                    document.querySelectorAll('.browser-tab').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+                    
+                    // Show corresponding content
+                    const tabName = this.getAttribute('data-tab');
+                    document.getElementById(`${tabName}-tab`).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

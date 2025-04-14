@@ -1,0 +1,13 @@
+# robots.txt для сайта CorgPhish
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /assets/raw/
+
+# Запрет индексации страниц с параметрами поиска
+Disallow: /*?q=
+
+# Адрес карты сайта
+Sitemap: https://corgphish.example.com/sitemap.xml 

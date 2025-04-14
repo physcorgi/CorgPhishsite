@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="300" viewBox="0 0 900 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="300" rx="10" fill="#F8F9FA"/>
+  
+  <!-- Step 1: Page Load -->
+  <rect x="20" y="60" width="150" height="180" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+  <rect x="20" y="60" width="150" height="30" rx="8 8 0 0" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="2"/>
+  <circle cx="35" cy="75" r="5" fill="#FF5F56"/>
+  <circle cx="50" cy="75" r="5" fill="#FFBD2E"/>
+  <circle cx="65" cy="75" r="5" fill="#27C93F"/>
+  <rect x="75" y="70" width="80" height="10" rx="5" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+  <rect x="30" y="100" width="130" height="10" rx="3" fill="#E0E0E0"/>
+  <rect x="30" y="120" width="110" height="10" rx="3" fill="#E0E0E0"/>
+  <rect x="30" y="140" width="130" height="10" rx="3" fill="#E0E0E0"/>
+  <rect x="30" y="160" width="90" height="10" rx="3" fill="#E0E0E0"/>
+  <rect x="30" y="180" width="70" height="20" rx="3" fill="#4A86E8"/>
+  <text x="95" y="260" font-family="'Montserrat', sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#333333">Загрузка страницы</text>
+  <text x="95" y="280" font-family="'Montserrat', sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#666666">Пользователь посещает сайт</text>
+  
+  <!-- Arrow 1 -->
+  <path d="M180 150H210" stroke="#4A86E8" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 5"/>
+  <polygon points="210,145 220,150 210,155" fill="#4A86E8"/>
+  
+  <!-- Step 2: Feature Extraction -->
+  <rect x="230" y="60" width="150" height="180" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+  <rect x="240" y="70" width="130" height="160" rx="4" fill="#F5F5F5"/>
+  <text x="305" y="100" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#333333">ИЗВЛЕЧЕНИЕ</text>
+  <text x="305" y="120" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#333333">ПРИЗНАКОВ</text>
+  <rect x="250" y="130" width="110" height="2" rx="1" fill="#4A86E8"/>
+  <rect x="250" y="140" width="110" height="2" rx="1" fill="#4A86E8"/>
+  <rect x="250" y="150" width="110" height="2" rx="1" fill="#4A86E8"/>
+  <rect x="250" y="160" width="110" height="2" rx="1" fill="#4A86E8"/>
+  <rect x="250" y="170" width="110" height="2" rx="1" fill="#4A86E8"/>
+  <rect x="250" y="180" width="110" height="2" rx="1" fill="#4A86E8"/>
+  <rect x="250" y="190" width="110" height="2" rx="1" fill="#4A86E8"/>
+  <rect x="250" y="200" width="110" height="2" rx="1" fill="#4A86E8"/>
+  <text x="305" y="260" font-family="'Montserrat', sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#333333">Извлечение признаков</text>
+  <text x="305" y="280" font-family="'Montserrat', sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#666666">Анализ 50+ факторов</text>
+  
+  <!-- Arrow 2 -->
+  <path d="M390 150H420" stroke="#4A86E8" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 5"/>
+  <polygon points="420,145 430,150 420,155" fill="#4A86E8"/>
+  
+  <!-- Step 3: ML Model -->
+  <rect x="440" y="60" width="150" height="180" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+  <circle cx="515" cy="150" r="65" fill="#F5F5F5"/>
+  <!-- Brain network visualization -->
+  <circle cx="490" cy="125" r="8" fill="#4A86E8" fill-opacity="0.7"/>
+  <circle cx="540" cy="125" r="8" fill="#4A86E8" fill-opacity="0.7"/>
+  <circle cx="515" cy="110" r="8" fill="#4A86E8" fill-opacity="0.7"/>
+  <circle cx="480" cy="150" r="8" fill="#4A86E8" fill-opacity="0.7"/>
+  <circle cx="515" cy="165" r="8" fill="#4A86E8" fill-opacity="0.7"/>
+  <circle cx="550" cy="150" r="8" fill="#4A86E8" fill-opacity="0.7"/>
+  <circle cx="495" cy="180" r="8" fill="#4A86E8" fill-opacity="0.7"/>
+  <circle cx="535" cy="180" r="8" fill="#4A86E8" fill-opacity="0.7"/>
+  <path d="M490 125L515 110M490 125L480 150M490 125L515 165M490 125L540 125M540 125L515 110M540 125L550 150M540 125L515 165M515 110L480 150M515 110L550 150M480 150L515 165M515 165L550 150M495 180L515 165M535 180L515 165M495 180L480 150M535 180L550 150" stroke="#4A86E8" stroke-width="1.5"/>
+  <text x="515" y="260" font-family="'Montserrat', sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#333333">Анализ модели ML</text>
+  <text x="515" y="280" font-family="'Montserrat', sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#666666">Оценка вероятности фишинга</text>
+  
+  <!-- Arrow 3 -->
+  <path d="M600 150H630" stroke="#4A86E8" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 5"/>
+  <polygon points="630,145 640,150 630,155" fill="#4A86E8"/>
+  
+  <!-- Step 4: Risk Assessment -->
+  <rect x="650" y="60" width="150" height="180" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+  <!-- Risk gauge -->
+  <path d="M725 150 L725 100 A50 50 0 0 1 771 130 Z" fill="#FF4D4D"/>
+  <path d="M725 150 L771 130 A50 50 0 0 1 725 200 Z" fill="#FFBD2E"/>
+  <path d="M725 150 L725 200 A50 50 0 0 1 679 130 Z" fill="#27C93F"/>
+  <path d="M725 150 L679 130 A50 50 0 0 1 725 100 Z" fill="#E0E0E0"/>
+  <circle cx="725" cy="150" r="10" fill="#FFFFFF" stroke="#333333" stroke-width="2"/>
+  <path d="M725 150 L755 120" stroke="#333333" stroke-width="2"/>
+  <text x="725" y="260" font-family="'Montserrat', sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#333333">Оценка риска</text>
+  <text x="725" y="280" font-family="'Montserrat', sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#666666">Определение уровня угрозы</text>
+  
+  <!-- Arrow 4 -->
+  <path d="M810 150H840" stroke="#4A86E8" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 5"/>
+  <polygon points="840,145 850,150 840,155" fill="#4A86E8"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" font-family="'Montserrat', sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#333333">Как работает CorgPhish</text>
+</svg> 

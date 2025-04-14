@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorgPhish - Интерактивное демо</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="CorgPhish Logo">
+                    <span>CorgPhish</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#features">Возможности</a>
+                <a href="index.html#how-it-works">Как это работает</a>
+                <a href="demo.html" class="active">Демо</a>
+                <a href="docs.html">Документация</a>
+                <a href="about.html">О проекте</a>
+            </div>
+            <div class="cta-buttons">
+                <a href="https://github.com/physcorgi/CorgPhish" class="btn btn-github"><i class="fab fa-github"></i> GitHub</a>
+                <a href="index.html#download" class="btn btn-primary">Скачать</a>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="demo-hero">
+        <div class="container">
+            <h1>Интерактивное демо CorgPhish</h1>
+            <p>Попробуйте нашу защиту от фишинга в действии. Введите URL или выберите один из примеров ниже, чтобы увидеть, как работает CorgPhish.</p>
+        </div>
+    </section>
+
+    <section class="demo-section">
+        <div class="container">
+            <div class="demo-container">
+                <div class="url-input-container">
+                    <div class="url-input-wrapper">
+                        <div class="url-prefix">https://</div>
+                        <input type="text" id="url-input" placeholder="Введите URL для проверки..." class="url-input">
+                        <button id="analyze-btn" class="btn btn-primary"><i class="fas fa-search"></i> Проверить</button>
+                    </div>
+                    <div class="example-urls">
+                        <span>Примеры:</span>
+                        <button class="example-url-btn" data-url="bank-secure-login.example.com">Поддельный банк</button>
+                        <button class="example-url-btn" data-url="faceb00k-security.example.org">Фальшивая соцсеть</button>
+                        <button class="example-url-btn" data-url="google.com">Безопасный сайт</button>
+                    </div>
+                </div>
+                
+                <div class="demo-results" id="demo-results">
+                    <div class="results-placeholder">
+                        <i class="fas fa-shield-alt"></i>
+                        <p>Введите URL выше для проверки на фишинг</p>
+                    </div>
+                </div>
+                
+                <div class="result-details" id="result-details" style="display: none;">
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="overview">Обзор</button>
+                        <button class="tab-btn" data-tab="details">Детали</button>
+                        <button class="tab-btn" data-tab="recommendations">Рекомендации</button>
+                    </div>
+                    
+                    <div class="tab-content" id="overview">
+                        <div class="overview-header">
+                            <div class="domain-info">
+                                <h3 id="result-domain">example.com</h3>
+                                <span id="result-url">https://example.com</span>
+                            </div>
+                            <div class="risk-indicator">
+                                <div class="risk-score">
+                                    <span id="risk-percent">0%</span>
+                                    <div>риск</div>
+                                </div>
+                                <div class="risk-meter">
+                                    <div class="risk-level" id="risk-level"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="overview-summary">
+                            <h4>Заключение:</h4>
+                            <p id="result-summary">Анализ не произведен. Введите URL для проверки.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="details" style="display: none;">
+                        <h3>Обнаруженные признаки</h3>
+                        <div class="details-list" id="details-list">
+                            <!-- Будет заполнено динамически -->
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="recommendations" style="display: none;">
+                        <h3>Рекомендации по безопасности</h3>
+                        <ul class="recommendations-list" id="recommendations-list">
+                            <!-- Будет заполнено динамически -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="demo-explanation">
+        <div class="container">
+            <h2>Как работает алгоритм проверки</h2>
+            <div class="explanation-steps">
+                <div class="explanation-step">
+                    <div class="step-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Анализ URL</h3>
+                    <p>Проверка структуры URL, наличия подозрительных символов, опечаток в домене и других признаков.</p>
+                </div>
+                <div class="explanation-step">
+                    <div class="step-icon"><i class="fas fa-code"></i></div>
+                    <h3>Анализ DOM</h3>
+                    <p>Исследование HTML-структуры страницы, поиск форм ввода конфиденциальных данных и подозрительного кода.</p>
+                </div>
+                <div class="explanation-step">
+                    <div class="step-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Анализ признаков</h3>
+                    <p>Выявление и оценка более 50 различных маркеров и индикаторов фишинга.</p>
+                </div>
+                <div class="explanation-step">
+                    <div class="step-icon"><i class="fas fa-brain"></i></div>
+                    <h3>ML-классификация</h3>
+                    <p>Использование модели машинного обучения для расчета итоговой вероятности фишинга на основе всех выявленных признаков.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-faq">
+        <div class="container">
+            <h2>Часто задаваемые вопросы</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Насколько точны результаты этой демо-версии?</h3>
+                        <div class="faq-toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Данная демо-версия представляет собой упрощенную реализацию алгоритма CorgPhish. Полная версия расширения для браузера имеет точность обнаружения 97.2%, в то время как демо показывает базовый принцип работы.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Отправляет ли демо мои данные на сервер?</h3>
+                        <div class="faq-toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Нет, демо работает полностью на стороне клиента (в вашем браузере) и не отправляет введенные URL на сервер. Вся обработка происходит локально.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Чем отличается полная версия от демо?</h3>
+                        <div class="faq-toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Полная версия CorgPhish в виде расширения для браузера имеет больше функций: автоматическая проверка всех посещаемых сайтов, интеграция с Google Safe Browsing API, глубокое сканирование, история проверок и многое другое.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Могу ли я использовать алгоритм CorgPhish в своих проектах?</h3>
+                        <div class="faq-toggle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, CorgPhish распространяется под лицензией MIT, что позволяет использовать его в личных и коммерческих проектах при условии сохранения уведомления об авторских правах.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="CorgPhish Logo">
+                    <p>CorgPhish - Умная защита от фишинга</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Ресурсы</h3>
+                        <a href="index.html">Главная</a>
+                        <a href="demo.html">Демо</a>
+                        <a href="docs.html">Документация</a>
+                        <a href="about.html">О проекте</a>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Сообщество</h3>
+                        <a href="https://github.com/physcorgi/CorgPhish/issues">Сообщить об ошибке</a>
+                        <a href="https://github.com/physcorgi/CorgPhish/discussions">Обсуждения</a>
+                        <a href="https://github.com/physcorgi/CorgPhish/blob/main/docs/CONTRIBUTING.md">Внести вклад</a>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Связаться с нами</h3>
+                        <a href="https://github.com/physcorgi/CorgPhish"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="mailto:physcorgi@proton.me"><i class="fas fa-envelope"></i> Email</a>
+                        <a href="https://t.me/physcorgi"><i class="fab fa-telegram"></i> Telegram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 CorgPhish. Все права защищены. <a href="https://github.com/physcorgi/CorgPhish/blob/main/LICENSE.md">Лицензия MIT</a></p>
+                <div class="social-links">
+                    <a href="https://github.com/physcorgi/CorgPhish"><i class="fab fa-github"></i></a>
+                    <a href="https://t.me/physcorgi"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/demo.js"></script>
+</body>
+</html> 

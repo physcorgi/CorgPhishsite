@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorgPhish - Интеллектуальная защита от фишинга</title>
+    <meta name="description" content="CorgPhish - расширение для браузера, которое защищает от фишинговых сайтов с использованием машинного обучения и передовых алгоритмов анализа">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.svg" alt="CorgPhish Logo">
+                <h1>CorgPhish</h1>
+            </div>
+            <button class="nav-toggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="docs.html">Документация</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный блок -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Защита от фишинга на основе ИИ</h2>
+                <p>CorgPhish - это расширение для браузера, которое защищает вас от мошеннических сайтов в реальном времени. С помощью машинного обучения и передовых алгоритмов, мы обнаруживаем и блокируем фишинговые сайты до того, как вы станете их жертвой.</p>
+                <div class="cta-buttons">
+                    <a href="#download" class="btn primary large">Скачать расширение</a>
+                    <a href="#features" class="btn secondary">Узнать больше</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/hero-image.svg" alt="CorgPhish защита от фишинга">
+            </div>
+        </div>
+    </section>
+
+    <!-- Возможности -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Ключевые возможности</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="img/icons/realtime.svg" alt="Обнаружение в реальном времени">
+                    </div>
+                    <h3>Обнаружение в реальном времени</h3>
+                    <p>Сканирование и анализ сайтов происходит мгновенно, обеспечивая защиту без замедления работы браузера</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="img/icons/ml.svg" alt="Машинное обучение">
+                    </div>
+                    <h3>Машинное обучение</h3>
+                    <p>Наши алгоритмы постоянно обучаются и адаптируются к новым видам фишинговых атак</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="img/icons/multi.svg" alt="Многофакторный анализ">
+                    </div>
+                    <h3>Многофакторный анализ</h3>
+                    <p>Проверка URL, содержимого страницы, SSL-сертификатов и других факторов для точного определения угроз</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="img/icons/alert.svg" alt="Визуальные предупреждения">
+                    </div>
+                    <h3>Визуальные предупреждения</h3>
+                    <p>Понятные и заметные уведомления предупредят вас о потенциальной опасности на сайте</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="img/icons/api.svg" alt="Интеграция с Google Safe Browsing">
+                    </div>
+                    <h3>Интеграция с Google Safe Browsing</h3>
+                    <p>Дополнительная проверка сайтов через базу данных известных вредоносных сайтов от Google</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="img/icons/deep.svg" alt="Глубокое сканирование">
+                    </div>
+                    <h3>Глубокое сканирование</h3>
+                    <p>Анализ скрытых элементов, перенаправлений и обфусцированного кода для выявления сложных угроз</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Статистика -->
+    <section class="stats">
+        <div class="container">
+            <h2>Эффективность защиты</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number"><span class="counter" data-target="96.8">0</span>%</div>
+                    <div class="stat-label">Точность (Accuracy)</div>
+                    <div class="stat-desc">Процент правильно классифицированных сайтов</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number"><span class="counter" data-target="95.2">0</span>%</div>
+                    <div class="stat-label">Точность (Precision)</div>
+                    <div class="stat-desc">Доля правильно идентифицированных фишинговых сайтов</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number"><span class="counter" data-target="94.5">0</span>%</div>
+                    <div class="stat-label">Полнота (Recall)</div>
+                    <div class="stat-desc">Доля фишинговых сайтов, которые были обнаружены</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number"><span class="counter" data-target="0.949">0</span></div>
+                    <div class="stat-label">F1-мера</div>
+                    <div class="stat-desc">Гармоническое среднее точности и полноты</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Призыв к действию -->
+    <section id="download" class="cta">
+        <div class="container">
+            <h2>Защитите себя от фишинга прямо сейчас</h2>
+            <p>Скачайте расширение CorgPhish и получите мгновенную защиту от фишинговых атак. Расширение бесплатное, с открытым исходным кодом и постоянно совершенствуется.</p>
+            <a href="https://github.com/physcorgi/CorgPhish/releases" class="btn primary large">Скачать для Chrome</a>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="img/logo-white.svg" alt="CorgPhish Logo">
+                        <span>CorgPhish</span>
+                    </div>
+                    <p>Интеллектуальная защита от фишинга на основе машинного обучения и передовых алгоритмов анализа.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/physcorgi/CorgPhish" class="social-link" target="_blank">
+                            <img src="img/icons/github.svg" alt="GitHub">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="docs.html">Документация</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Ресурсы</h4>
+                    <ul>
+                        <li><a href="docs.html#installation">Установка</a></li>
+                        <li><a href="docs.html#usage">Использование</a></li>
+                        <li><a href="docs.html#api">API</a></li>
+                        <li><a href="https://github.com/physcorgi/CorgPhish/issues">Сообщить о проблеме</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><a href="mailto:info@corgphish.com">info@corgphish.com</a></li>
+                        <li><a href="https://github.com/physcorgi/CorgPhish">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 CorgPhish. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

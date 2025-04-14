@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Alert triangle -->
+  <path d="M32 8L4 54H60L32 8Z" stroke="#4A86E8" stroke-width="3" fill="none"/>
+  <path d="M32 8L4 54H60L32 8Z" fill="#F5B700" fill-opacity="0.3"/>
+  
+  <!-- Exclamation mark -->
+  <path d="M32 28V40" stroke="#4A86E8" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="32" cy="46" r="3" fill="#4A86E8"/>
+  
+  <!-- Alert waves -->
+  <path d="M22 22C18 26 16 30 16 36" stroke="#4A86E8" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 2"/>
+  <path d="M42 22C46 26 48 30 48 36" stroke="#4A86E8" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 2"/>
+</svg> 

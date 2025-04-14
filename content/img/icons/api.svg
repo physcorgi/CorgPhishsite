@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield -->
+  <path d="M16 12L32 6L48 12V30C48 38 40 46 32 48C24 46 16 38 16 30V12Z" stroke="#4A86E8" stroke-width="3" fill="none"/>
+  
+  <!-- Google colors in shield -->
+  <path d="M32 12C28 18 26 22 26 30C26 34 28 40 32 42C36 40 38 34 38 30C38 22 36 18 32 12Z" fill="#4285F4"/>
+  <path d="M26 30C26 22 28 18 32 12C30 16 28 18 28 24C28 28 30 32 32 34C30 32 26 32 26 30Z" fill="#34A853"/>
+  <path d="M38 30C38 22 36 18 32 12C34 16 36 18 36 24C36 28 34 32 32 34C34 32 38 32 38 30Z" fill="#FBBC05"/>
+  <path d="M28 24C28 18 30 16 32 12C29 14 26 18 26 30C26 32 30 32 32 34C30 32 28 28 28 24Z" fill="#EA4335"/>
+  
+  <!-- API Letters -->
+  <path d="M24 54H28L32 62H28L24 54Z" fill="#F5B700"/>
+  <path d="M32 54H36V62H32V58H36" stroke="#F5B700" stroke-width="2"/>
+  <path d="M40 54V62M40 58H44" stroke="#F5B700" stroke-width="2"/>
+  
+  <!-- Connection lines -->
+  <path d="M32 48V54" stroke="#4A86E8" stroke-width="1" stroke-dasharray="2 2"/>
+</svg> 

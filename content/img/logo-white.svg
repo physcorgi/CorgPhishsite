@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Corgi head shape -->
+  <path d="M70 120C97.6142 120 120 97.6142 120 70C120 42.3858 97.6142 20 70 20C42.3858 20 20 42.3858 20 70C20 97.6142 42.3858 120 70 120Z" fill="#FFFFFF"/>
+  <!-- Ears -->
+  <path d="M35 45C32 35 25 32 20 30C15 40 18 55 25 60C30 62 40 55 35 45Z" fill="#FFFFFF"/>
+  <path d="M105 45C108 35 115 32 120 30C125 40 122 55 115 60C110 62 100 55 105 45Z" fill="#FFFFFF"/>
+  <!-- Face details -->
+  <circle cx="50" cy="65" r="5" fill="#FAFAFA"/>
+  <circle cx="90" cy="65" r="5" fill="#FAFAFA"/>
+  <path d="M60 80C65 88 75 88 80 80" stroke="#FAFAFA" stroke-width="3" stroke-linecap="round"/>
+  <!-- Nose -->
+  <path d="M70 75C73 75 75 72 75 69C75 66 72 64 70 64C68 64 65 66 65 69C65 72 67 75 70 75Z" fill="#FAFAFA"/>
+  <!-- Shield overlay -->
+  <path d="M70 110C85 110 95 95 95 80C95 65 85 45 70 45C55 45 45 65 45 80C45 95 55 110 70 110Z" fill="#FFFFFF" fill-opacity="0.4"/>
+  <!-- Lock icon -->
+  <rect x="63" y="70" width="14" height="12" rx="2" fill="#FFFFFF"/>
+  <rect x="65" y="65" width="10" height="8" rx="2" fill="#FFFFFF"/>
+  <circle cx="70" cy="76" r="2" fill="#333333"/>
+</svg> 

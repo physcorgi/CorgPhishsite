@@ -1,0 +1,66 @@
+# Включение модуля mod_rewrite
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Перенаправление с www на без www (раскомментировать если нужно)
+    # RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+    # RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+    # Перенаправление с HTTP на HTTPS (раскомментировать если нужно)
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Если файл или директория не существуют, продолжить обработку
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    # Перенаправление на index.html для поддержки SPA если это нужно
+    # RewriteRule ^ index.html [L]
+</IfModule>
+
+# Установка правильных MIME-типов
+<IfModule mod_mime.c>
+    AddType text/css .css
+    AddType application/javascript .js
+    AddType image/svg+xml .svg
+    AddType application/font-woff .woff
+    AddType application/font-woff2 .woff2
+</IfModule>
+
+# Включение сжатия для быстрой загрузки
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript text/javascript application/json image/svg+xml
+</IfModule>
+
+# Установка кэширования статических файлов
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+</IfModule>
+
+# Защита от показа структуры каталогов
+Options -Indexes
+
+# Защита .htaccess файла
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Защита от хотлинкинга изображений (раскомментировать если нужно)
+# <IfModule mod_rewrite.c>
+#     RewriteEngine on
+#     RewriteCond %{HTTP_REFERER} !^$
+#     RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?yourdomain.com [NC]
+#     RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?google.com [NC]
+#     RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F,L]
+# </IfModule> 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Magnifying glass -->
+  <circle cx="28" cy="28" r="16" stroke="#4A86E8" stroke-width="3" fill="none"/>
+  <path d="M40 40L52 52" stroke="#4A86E8" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Code layers -->
+  <path d="M16 20H28M16 28H32M16 36H24" stroke="#F5B700" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Hidden elements symbol -->
+  <rect x="20" y="24" width="16" height="8" fill="#F5B700" fill-opacity="0.3"/>
+  <path d="M20 24L36 32M36 24L20 32" stroke="#4A86E8" stroke-width="1"/>
+  
+  <!-- Deep scan rays -->
+  <path d="M28 12V8M44 28H48M28 48V44M12 28H8M41 15L44 12M41 41L44 44M15 41L12 44M15 15L12 12" stroke="#4A86E8" stroke-width="1" stroke-linecap="round"/>
+</svg> 

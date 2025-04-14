@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" rx="8" fill="#F8F9FA"/>
+  
+  <!-- Central shield -->
+  <path d="M300 350C350 350 380 320 380 270C380 220 350 150 300 150C250 150 220 220 220 270C220 320 250 350 300 350Z" fill="#F5B700" fill-opacity="0.2" stroke="#F5B700" stroke-width="3"/>
+  
+  <!-- Characters -->
+  <circle cx="150" cy="250" r="40" fill="#CCCCCC"/>
+  <circle cx="450" cy="250" r="40" fill="#CCCCCC"/>
+  
+  <!-- Character faces -->
+  <circle cx="140" cy="240" r="4" fill="#333333"/>
+  <circle cx="160" cy="240" r="4" fill="#333333"/>
+  <path d="M140 260C145 265 155 265 160 260" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+  
+  <circle cx="440" cy="240" r="4" fill="#333333"/>
+  <circle cx="460" cy="240" r="4" fill="#333333"/>
+  <path d="M440 260C445 265 455 265 460 260" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Connection lines -->
+  <path d="M190 250L220 270" stroke="#CCCCCC" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M410 250L380 270" stroke="#CCCCCC" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Central CorgPhish logo -->
+  <circle cx="300" cy="200" r="50" fill="#4A86E8" fill-opacity="0.3"/>
+  
+  <!-- Corgi silhouette -->
+  <path d="M300 230C320 230 330 215 330 200C330 185 320 170 300 170C280 170 270 185 270 200C270 215 280 230 300 230Z" fill="#F5B700"/>
+  
+  <!-- Ears -->
+  <path d="M280 180C276 175 270 173 265 175C264 185 270 195 275 195C280 195 285 190 280 180Z" fill="#F5B700"/>
+  <path d="M320 180C324 175 330 173 335 175C336 185 330 195 325 195C320 195 315 190 320 180Z" fill="#F5B700"/>
+  
+  <!-- Eyes -->
+  <circle cx="290" cy="195" r="3" fill="#333333"/>
+  <circle cx="310" cy="195" r="3" fill="#333333"/>
+  
+  <!-- Nose -->
+  <path d="M300 205C302 205 304 203 304 201C304 199 302 198 300 198C298 198 296 199 296 201C296 203 298 205 300 205Z" fill="#333333"/>
+  
+  <!-- Smile -->
+  <path d="M295 208C297 210 303 210 305 208" stroke="#333333" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- Lock icon -->
+  <rect x="295" cy="215" width="10" height="8" rx="2" fill="#4A86E8"/>
+  <rect x="297" cy="212" width="6" height="5" rx="2" fill="#4A86E8"/>
+  <circle cx="300" cy="218" r="1" fill="white"/>
+  
+  <!-- Phishing icons -->
+  <path d="M100 150L130 170V130L100 150Z" fill="#FF4D4D"/>
+  <path d="M500 150L470 170V130L500 150Z" fill="#FF4D4D"/>
+  <path d="M120 350L100 320H140L120 350Z" fill="#FF4D4D"/>
+  <path d="M480 350L460 320H500L480 350Z" fill="#FF4D4D"/>
+  
+  <!-- Shield rays -->
+  <path d="M300 100V130M240 120L260 140M360 120L340 140M220 180L250 190M380 180L350 190M220 260L250 250M380 260L350 250" stroke="#4A86E8" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Mission text -->
+  <path d="M190 100H410M230 80H370M260 60H340" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+</svg> 

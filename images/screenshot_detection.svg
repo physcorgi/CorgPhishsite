@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Browser window -->
+  <rect x="50" y="40" width="700" height="420" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+  
+  <!-- Browser header -->
+  <rect x="50" y="40" width="700" height="40" rx="8 8 0 0" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="2"/>
+  
+  <!-- Browser buttons -->
+  <circle cx="75" cy="60" r="6" fill="#FF5F56"/>
+  <circle cx="95" cy="60" r="6" fill="#FFBD2E"/>
+  <circle cx="115" cy="60" r="6" fill="#27C93F"/>
+  
+  <!-- URL bar -->
+  <rect x="140" y="50" width="550" height="20" rx="10" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="360" y="65" font-family="'Montserrat', sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#FF4D4D">https://secure-banking-login.example.org</text>
+  
+  <!-- Website content -->
+  <rect x="70" y="100" width="660" height="340" rx="4" fill="#F8F9FA"/>
+  
+  <!-- Fake bank logo -->
+  <rect x="350" y="120" width="100" height="40" rx="4" fill="#4A86E8"/>
+  <text x="400" y="145" font-family="'Montserrat', sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#FFFFFF">БАНК</text>
+  
+  <!-- Login form -->
+  <rect x="275" y="180" width="250" height="200" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="400" y="210" font-family="'Montserrat', sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#333333">Вход в личный кабинет</text>
+  
+  <rect x="300" y="230" width="200" height="30" rx="4" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="310" y="250" font-family="'Montserrat', sans-serif" font-size="12" font-weight="400" fill="#999999">Логин</text>
+  
+  <rect x="300" y="270" width="200" height="30" rx="4" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="310" y="290" font-family="'Montserrat', sans-serif" font-size="12" font-weight="400" fill="#999999">Пароль</text>
+  
+  <rect x="300" y="320" width="200" height="40" rx="4" fill="#4A86E8"/>
+  <text x="400" y="345" font-family="'Montserrat', sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#FFFFFF">ВОЙТИ</text>
+  
+  <!-- CorgPhish Alert -->
+  <rect x="200" y="100" width="400" height="280" rx="8" fill="#FFFFFF" stroke="#FF4D4D" stroke-width="3"/>
+  <rect x="200" y="100" width="400" height="50" rx="8 8 0 0" fill="#FF4D4D"/>
+  <text x="400" y="130" font-family="'Montserrat', sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#FFFFFF">⚠️ ВНИМАНИЕ: ФИШИНГОВЫЙ САЙТ</text>
+  
+  <!-- Alert content -->
+  <text x="400" y="180" font-family="'Montserrat', sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#333333">CorgPhish обнаружил признаки фишингового сайта</text>
+  
+  <text x="220" y="210" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" fill="#333333">Обнаруженные проблемы:</text>
+  <text x="220" y="235" font-family="'Montserrat', sans-serif" font-size="12" font-weight="400" fill="#333333">• Сайт имитирует известный банк</text>
+  <text x="220" y="255" font-family="'Montserrat', sans-serif" font-size="12" font-weight="400" fill="#333333">• Подозрительный домен не соответствует банку</text>
+  <text x="220" y="275" font-family="'Montserrat', sans-serif" font-size="12" font-weight="400" fill="#333333">• Форма для сбора чувствительных данных</text>
+  <text x="220" y="295" font-family="'Montserrat', sans-serif" font-size="12" font-weight="400" fill="#333333">• Сайт зарегистрирован недавно (3 дня назад)</text>
+  
+  <text x="220" y="325" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" fill="#333333">Вероятность фишинга:</text>
+  <rect x="220" y="335" width="360" height="10" rx="5" fill="#E0E0E0"/>
+  <rect x="220" y="335" width="324" height="10" rx="5" fill="#FF4D4D"/>
+  <text x="585" y="345" font-family="'Montserrat', sans-serif" font-size="12" font-weight="700" fill="#FF4D4D">90%</text>
+  
+  <!-- Buttons -->
+  <rect x="250" y="360" width="140" height="35" rx="4" fill="#27C93F"/>
+  <text x="320" y="382" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#FFFFFF">ПОКИНУТЬ САЙТ</text>
+  
+  <rect x="410" y="360" width="140" height="35" rx="4" fill="#E0E0E0"/>
+  <text x="480" y="382" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" text-anchor="middle" fill="#666666">ИГНОРИРОВАТЬ</text>
+  
+  <!-- CorgPhish logo small -->
+  <circle cx="400" cy="410" r="15" fill="#F5B700"/>
+  <text x="400" y="414" font-family="'Montserrat', sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#333333">CP</text>
+  <text x="425" y="414" font-family="'Montserrat', sans-serif" font-size="10" font-weight="500" fill="#666666">by CorgPhish</text>
+</svg> 

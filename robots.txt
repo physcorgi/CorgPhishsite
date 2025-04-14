@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Запретить доступ к служебным файлам
+Disallow: /.htaccess
+Disallow: /server-test.php
+Disallow: /css/*.map
+Disallow: /js/*.map
+
+# Запрет индексации временных файлов
+Disallow: /*.tmp$
+Disallow: /*.log$ 
