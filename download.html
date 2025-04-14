@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download CorgPhish - Advanced Phishing Detection Tool</title>
+    <meta name="description" content="Download CorgPhish - a powerful, open-source phishing detection tool. Available for multiple platforms including Windows, Mac, and Linux.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/download.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="CorgPhish Logo">
+                    <span>CorgPhish</span>
+                </a>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="demo.html">Demo</a></li>
+                    <li><a href="download.html" class="active">Download</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content animate-on-scroll">
+                <h1>Download CorgPhish</h1>
+                <p>Get started with our powerful phishing detection tool, available for all major platforms.</p>
+                <div class="hero-cta">
+                    <a href="#download" class="cta-btn">Download Now</a>
+                    <a href="https://github.com/corgphish/corgphish" target="_blank" class="cta-btn secondary">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image animate-on-scroll">
+                <img src="images/download-hero.png" alt="CorgPhish Download">
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="download-container">
+            <div class="download-heading animate-on-scroll">
+                <h2>Choose Your Platform</h2>
+                <p>CorgPhish is available for all major platforms. Select your operating system to get started.</p>
+            </div>
+            <div class="download-grid">
+                <!-- Windows Download -->
+                <div class="download-card animate-on-scroll">
+                    <div class="download-card-header">
+                        <h3><i class="fab fa-windows"></i> Windows</h3>
+                        <p>For Windows 10 and 11</p>
+                    </div>
+                    <div class="download-card-body">
+                        <ul>
+                            <li>User-friendly installer</li>
+                            <li>Automatic updates</li>
+                            <li>Browser integration</li>
+                            <li>Real-time scanning</li>
+                        </ul>
+                        <button class="download-btn" data-platform="windows" data-file="corgphish-win-1.2.0.exe">
+                            Download for Windows
+                        </button>
+                        <span class="download-version">Version 1.2.0 (64-bit)</span>
+                    </div>
+                </div>
+
+                <!-- macOS Download -->
+                <div class="download-card animate-on-scroll">
+                    <div class="download-card-header">
+                        <h3><i class="fab fa-apple"></i> macOS</h3>
+                        <p>For macOS 10.14 and later</p>
+                    </div>
+                    <div class="download-card-body">
+                        <ul>
+                            <li>Native Apple Silicon support</li>
+                            <li>Safari extension</li>
+                            <li>Seamless integration</li>
+                            <li>Lightweight resource usage</li>
+                        </ul>
+                        <button class="download-btn" data-platform="macos" data-file="corgphish-mac-1.2.0.dmg">
+                            Download for macOS
+                        </button>
+                        <span class="download-version">Version 1.2.0 (Universal)</span>
+                    </div>
+                </div>
+
+                <!-- Linux Download -->
+                <div class="download-card animate-on-scroll">
+                    <div class="download-card-header">
+                        <h3><i class="fab fa-linux"></i> Linux</h3>
+                        <p>For major Linux distributions</p>
+                    </div>
+                    <div class="download-card-body">
+                        <ul>
+                            <li>Available as .deb and .rpm</li>
+                            <li>Command-line interface</li>
+                            <li>Firefox & Chrome integration</li>
+                            <li>Customizable settings</li>
+                        </ul>
+                        <button class="download-btn" data-platform="linux" data-file="corgphish-linux-1.2.0.deb">
+                            Download for Linux
+                        </button>
+                        <span class="download-version">Version 1.2.0 (.deb)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Guide Section -->
+    <section class="installation-guide">
+        <h2 class="animate-on-scroll">Installation Guide</h2>
+        
+        <div class="tab-navigation animate-on-scroll">
+            <div class="tab-link active" data-tab="windows-tab">Windows</div>
+            <div class="tab-link" data-tab="macos-tab">macOS</div>
+            <div class="tab-link" data-tab="linux-tab">Linux</div>
+            <div class="tab-link" data-tab="browser-tab">Browser Extension</div>
+        </div>
+        
+        <!-- Windows Tab -->
+        <div id="windows-tab" class="tab-content active">
+            <div class="installation-step">
+                <h3>1. Download the installer</h3>
+                <p>Click the "Download for Windows" button above to get the latest version.</p>
+            </div>
+            <div class="installation-step">
+                <h3>2. Run the installer</h3>
+                <p>Double-click the downloaded .exe file and follow the installation wizard.</p>
+            </div>
+            <div class="installation-step">
+                <h3>3. Launch CorgPhish</h3>
+                <p>Once installed, you can find CorgPhish in your Start menu or desktop.</p>
+            </div>
+            <div class="installation-step">
+                <h3>4. Browser Integration</h3>
+                <p>During first launch, you'll be prompted to install browser extensions for Chrome, Firefox, or Edge.</p>
+            </div>
+        </div>
+        
+        <!-- macOS Tab -->
+        <div id="macos-tab" class="tab-content">
+            <div class="installation-step">
+                <h3>1. Download the DMG file</h3>
+                <p>Click the "Download for macOS" button above to get the latest version.</p>
+            </div>
+            <div class="installation-step">
+                <h3>2. Open the DMG file</h3>
+                <p>Double-click the downloaded .dmg file to mount it.</p>
+            </div>
+            <div class="installation-step">
+                <h3>3. Install CorgPhish</h3>
+                <p>Drag the CorgPhish app to your Applications folder.</p>
+            </div>
+            <div class="installation-step">
+                <h3>4. First Launch</h3>
+                <p>Right-click the app and select "Open" to bypass Gatekeeper warnings on first launch.</p>
+                <div class="code-block">
+                    <code>sudo spctl --master-disable</code>
+                    <button class="copy-command" data-command="sudo spctl --master-disable">Copy</button>
+                </div>
+                <p>Or use this command to permanently allow the app (not recommended for security reasons).</p>
+            </div>
+        </div>
+        
+        <!-- Linux Tab -->
+        <div id="linux-tab" class="tab-content">
+            <div class="installation-step">
+                <h3>1. Download the package</h3>
+                <p>Click the "Download for Linux" button above to get the latest .deb package.</p>
+            </div>
+            <div class="installation-step">
+                <h3>2. Install using apt (Debian/Ubuntu)</h3>
+                <div class="code-block">
+                    <code>sudo apt install ./corgphish-linux-1.2.0.deb</code>
+                    <button class="copy-command" data-command="sudo apt install ./corgphish-linux-1.2.0.deb">Copy</button>
+                </div>
+            </div>
+            <div class="installation-step">
+                <h3>3. Or install using RPM (Fedora/RHEL)</h3>
+                <div class="code-block">
+                    <code>sudo rpm -i corgphish-linux-1.2.0.rpm</code>
+                    <button class="copy-command" data-command="sudo rpm -i corgphish-linux-1.2.0.rpm">Copy</button>
+                </div>
+            </div>
+            <div class="installation-step">
+                <h3>4. Launch from terminal</h3>
+                <div class="code-block">
+                    <code>corgphish</code>
+                    <button class="copy-command" data-command="corgphish">Copy</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Browser Extension Tab -->
+        <div id="browser-tab" class="tab-content">
+            <div class="installation-step">
+                <h3>1. Chrome Extension</h3>
+                <p>Install directly from the Chrome Web Store:</p>
+                <a href="https://chrome.google.com/webstore/detail/corgphish/fakeextensionid" target="_blank" class="download-btn secondary">Chrome Web Store</a>
+            </div>
+            <div class="installation-step">
+                <h3>2. Firefox Add-on</h3>
+                <p>Install directly from Firefox Add-ons:</p>
+                <a href="https://addons.mozilla.org/en-US/firefox/addon/corgphish/" target="_blank" class="download-btn secondary">Firefox Add-ons</a>
+            </div>
+            <div class="installation-step">
+                <h3>3. Edge Extension</h3>
+                <p>Install directly from Microsoft Store:</p>
+                <a href="https://microsoftedge.microsoft.com/addons/detail/corgphish/fakeextensionid" target="_blank" class="download-btn secondary">Microsoft Store</a>
+            </div>
+            <div class="installation-step">
+                <h3>4. Manual Installation</h3>
+                <p>You can also download the extension files directly and install them manually:</p>
+                <button class="download-btn" data-platform="extension" data-file="corgphish-extension-1.2.0.zip">
+                    Download Extension Package
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2 class="animate-on-scroll">Frequently Asked Questions</h2>
+        
+        <div class="faq-item animate-on-scroll">
+            <div class="faq-question">Is CorgPhish free to use?</div>
+            <div class="faq-answer">
+                <p>Yes, CorgPhish is completely free and open-source. You can use it for personal or commercial purposes without any limitations. The core functionality will always remain free, though we may introduce premium features in the future.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item animate-on-scroll">
+            <div class="faq-question">How does CorgPhish detect phishing attempts?</div>
+            <div class="faq-answer">
+                <p>CorgPhish uses a combination of machine learning algorithms, URL analysis, content inspection, and visual similarity detection to identify potential phishing attempts. Our models are continuously updated based on the latest phishing techniques and threats.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item animate-on-scroll">
+            <div class="faq-question">Does CorgPhish collect my personal data?</div>
+            <div class="faq-answer">
+                <p>CorgPhish respects your privacy. By default, it only collects anonymous usage statistics to improve the service. You can opt out of this data collection in the settings. We never collect personal information such as browsing history, passwords, or other sensitive data.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item animate-on-scroll">
+            <div class="faq-question">Can I use CorgPhish in my company?</div>
+            <div class="faq-answer">
+                <p>Absolutely! CorgPhish can be deployed across your organization to protect all employees. For enterprise-level deployments with centralized management, please contact us for more information about our enterprise solutions.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item animate-on-scroll">
+            <div class="faq-question">How can I contribute to the project?</div>
+            <div class="faq-answer">
+                <p>As an open-source project, we welcome contributions! You can contribute by submitting bug reports, feature requests, or code contributions through our GitHub repository. Check out our contribution guidelines for more information.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Release Notes Section -->
+    <section class="release-notes animate-on-scroll">
+        <div class="container">
+            <h2>Release Notes &amp; Version History</h2>
+            <p class="release-description">Here you can find information about the latest updates and changes in CorgPhish.</p>
+            
+            <div class="version-timeline" id="version-timeline">
+                <!-- Version history will be populated from version.json -->
+                <div class="version-loading">Loading version history...</div>
+            </div>
+            
+            <div class="version-cta">
+                <p>Want to see all changes and previous versions?</p>
+                <a href="https://github.com/corgphish/corgphish/releases" target="_blank" class="btn btn-outline">View All Releases</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="CorgPhish Logo">
+                    <span>CorgPhish</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="demo.html">Demo</a></li>
+                            <li><a href="download.html">Download</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">API</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://github.com/corgphish/corgphish" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="#"><i class="fab fa-discord"></i> Discord</a></li>
+                            <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CorgPhish. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> by the CorgPhish Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="notification" id="notification">
+        <span id="notification-message"></span>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/download.js"></script>
+</body>
+</html> 

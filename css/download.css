@@ -1,0 +1,1219 @@
+/* Стили для страницы загрузок */
+:root {
+    --primary-color: #4f46e5;
+    --primary-dark: #4338ca;
+    --secondary-color: #10b981;
+    --accent-color: #f59e0b;
+    --text-color: #1f2937;
+    --text-light: #6b7280;
+    --background-color: #ffffff;
+    --background-alt: #f9fafb;
+    --border-color: #e5e7eb;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --download-primary: #4285f4;
+    --download-primary-hover: #3367d6;
+    --download-secondary: #34a853;
+    --download-danger: #ea4335;
+    --download-warning: #fbbc05;
+    --download-dark: #202124;
+    --download-light: #f8f9fa;
+    --download-gray: #dadce0;
+    --download-gray-dark: #5f6368;
+    --card-shadow: 0 4px 6px rgba(32, 33, 36, 0.05), 0 1px 3px rgba(32, 33, 36, 0.1);
+    --card-shadow-hover: 0 8px 16px rgba(32, 33, 36, 0.1), 0 2px 6px rgba(32, 33, 36, 0.08);
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.3s ease-in-out;
+    --transition-slow: 0.5s ease-in-out;
+}
+
+/* Герой секция */
+.download-hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    padding: 100px 0 70px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.download-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/pattern.svg');
+    background-size: cover;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.download-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.download-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.download-hero p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Секция с вариантами загрузки */
+.download-options-section {
+    padding: 5rem 0;
+    background-color: var(--download-light);
+}
+
+.download-options-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--download-dark);
+}
+
+.browser-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.browser-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    padding: 2rem;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    transition: var(--transition-medium);
+    display: flex;
+    flex-direction: column;
+    transform: translateY(0);
+}
+
+.browser-card:hover {
+    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-5px);
+}
+
+.browser-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--download-primary);
+}
+
+.browser-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--download-dark);
+}
+
+.browser-card p {
+    color: var(--download-gray-dark);
+    margin-bottom: 1.5rem;
+}
+
+.browser-stats {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.browser-stats .stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--download-gray-dark);
+    font-size: 0.9rem;
+}
+
+.browser-stats .stat i {
+    color: var(--download-primary);
+    font-size: 1rem;
+}
+
+.browser-actions {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.browser-card .download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.browser-card .fa-chrome {
+    color: #4285f4;
+}
+
+.browser-card .fa-firefox {
+    color: #ff9500;
+}
+
+.browser-card .fa-edge {
+    color: #0078d7;
+}
+
+/* Руководство по установке */
+.installation-guide {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.installation-guide h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--download-dark);
+}
+
+.tabs-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--download-gray);
+    padding-bottom: 1rem;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--download-gray-dark);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    border-radius: 6px;
+    position: relative;
+}
+
+.tab-btn:after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--download-primary);
+    transform: scaleX(0);
+    transition: var(--transition-fast);
+}
+
+.tab-btn.active {
+    color: var(--download-primary);
+}
+
+.tab-btn.active:after {
+    transform: scaleX(1);
+}
+
+.tab-btn:hover {
+    background-color: rgba(66, 133, 244, 0.05);
+}
+
+.tab-content {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.tab-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--download-dark);
+    font-weight: 600;
+    text-align: center;
+}
+
+.installation-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.step {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.step-number {
+    background-color: var(--download-primary);
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex-grow: 1;
+}
+
+.step-content h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    color: var(--download-dark);
+    font-weight: 600;
+}
+
+.step-content p {
+    color: var(--download-gray-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.step-content code {
+    background-color: var(--download-light);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+    color: var(--download-primary);
+    font-size: 0.9rem;
+}
+
+.step-image {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+.step-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Release Notes Styles */
+.release-notes {
+    background-color: var(--download-light);
+    padding: 5rem 0;
+}
+
+.release-notes h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--download-dark);
+}
+
+.release-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color: var(--download-gray-dark);
+    font-size: 1.1rem;
+}
+
+.version-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.version-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 120px;
+    width: 3px;
+    background-color: var(--download-gray);
+    z-index: 1;
+}
+
+.version-item {
+    position: relative;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.version-item:last-child {
+    margin-bottom: 0;
+}
+
+.version-badge {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    margin-right: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0.75rem;
+    box-shadow: var(--card-shadow);
+    z-index: 2;
+    margin-bottom: 1.5rem;
+}
+
+.version-badge.current {
+    background-color: var(--download-primary);
+    color: white;
+}
+
+.version-number {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+.version-date {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.version-label {
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.version-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+    margin-left: 150px;
+    margin-top: -2.5rem;
+}
+
+.version-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    color: var(--download-dark);
+}
+
+.version-content h4:first-child {
+    margin-top: 0;
+}
+
+.changelog {
+    color: var(--download-gray-dark);
+}
+
+.changelog ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+
+.changelog li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.changelog li:last-child {
+    margin-bottom: 0;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin-right: 0.75rem;
+    min-width: 80px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.tag-feature {
+    background-color: #e6f7ff;
+    color: #0070f3;
+}
+
+.tag-improvement {
+    background-color: #e6fffb;
+    color: #13c2c2;
+}
+
+.tag-fix {
+    background-color: #fff7e6;
+    color: #fa8c16;
+}
+
+.version-loading, .version-error {
+    text-align: center;
+    padding: 2rem;
+    color: var(--download-gray-dark);
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+}
+
+.version-error {
+    color: var(--download-danger);
+}
+
+.version-cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.version-cta p {
+    margin-bottom: 1rem;
+    color: var(--download-gray-dark);
+}
+
+/* Media queries for responsive release notes */
+@media (max-width: 768px) {
+    .version-timeline::before {
+        left: 80px;
+    }
+    
+    .version-badge {
+        width: 80px;
+        padding: 0.5rem;
+    }
+    
+    .version-content {
+        margin-left: 100px;
+    }
+    
+    .version-number {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .version-timeline::before {
+        display: none;
+    }
+    
+    .version-badge {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .version-content {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+    .version-item {
+        display: block;
+    }
+    
+    .changelog li {
+        flex-direction: column;
+    }
+    
+    .tag {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* FAQ секция */
+.download-faq {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.download-faq h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--download-dark);
+}
+
+.faq-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.faq-item {
+    background-color: var(--download-light);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: var(--transition-medium);
+}
+
+.faq-item:hover {
+    box-shadow: var(--card-shadow);
+}
+
+.faq-question {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.faq-question h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--download-dark);
+    font-weight: 600;
+}
+
+.faq-toggle {
+    color: var(--download-primary);
+    font-size: 1rem;
+    transition: var(--transition-fast);
+}
+
+.faq-item.active .faq-toggle i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 1.5rem 1.5rem;
+    color: var(--download-gray-dark);
+    line-height: 1.6;
+    display: none;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+.faq-answer a {
+    color: var(--download-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.faq-answer a:hover {
+    text-decoration: underline;
+}
+
+/* CTA секция */
+.cta-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/pattern.svg');
+    background-size: cover;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.cta-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-content .btn-lg {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    margin-bottom: 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.cta-features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.cta-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.cta-feature i {
+    color: var(--download-secondary);
+    font-size: 1.2rem;
+}
+
+/* Анимации */
+.animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity var(--transition-medium), transform var(--transition-medium);
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-1 {
+    transition-delay: 0.1s;
+}
+
+.delay-2 {
+    transition-delay: 0.2s;
+}
+
+.delay-3 {
+    transition-delay: 0.3s;
+}
+
+/* Адаптивность */
+@media (max-width: 900px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .browser-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .version-timeline::before {
+        left: 80px;
+    }
+    
+    .version-badge {
+        width: 60px;
+        font-size: 0.8rem;
+    }
+    
+    .version-date,
+    .version-content {
+        margin-left: 100px;
+    }
+    
+    .cta-features {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .step {
+        flex-direction: column;
+    }
+    
+    .step-number {
+        margin-bottom: 1rem;
+    }
+    
+    .download-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .download-hero p {
+        font-size: 1.1rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-content p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .version-timeline::before {
+        display: none;
+    }
+    
+    .version-badge {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+    
+    .version-date,
+    .version-content {
+        margin-left: 0;
+    }
+    
+    .tabs {
+        flex-wrap: wrap;
+    }
+    
+    .tab-btn:after {
+        bottom: 0;
+    }
+}
+
+/* Download section */
+.download-section {
+    padding: 4rem 0;
+    background-color: var(--background-alt);
+}
+
+.download-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.download-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.download-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.download-heading p {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.download-card {
+    background-color: var(--background-color);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.download-card-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.download-card-header h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+.download-card-header p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.download-card-header::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.download-card-body {
+    padding: 1.5rem;
+}
+
+.download-card-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.download-card-body ul li {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: flex-start;
+    color: var(--text-color);
+}
+
+.download-card-body ul li::before {
+    content: '✓';
+    color: var(--secondary-color);
+    margin-right: 0.75rem;
+    font-weight: bold;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.download-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+.download-btn.secondary {
+    background-color: var(--secondary-color);
+}
+
+.download-version {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: var(--text-light);
+    text-align: center;
+}
+
+/* Installation guide tabs */
+.installation-guide {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+}
+
+.installation-guide h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.tab-navigation {
+    display: flex;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tab-link {
+    padding: 0.75rem 1.5rem;
+    color: var(--text-light);
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    position: relative;
+}
+
+.tab-link:hover {
+    color: var(--primary-color);
+}
+
+.tab-link.active {
+    color: var(--primary-color);
+}
+
+.tab-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.installation-step {
+    margin-bottom: 2rem;
+}
+
+.installation-step h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.code-block {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    font-family: monospace;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.copy-command {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.875rem;
+}
+
+.copy-command:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* FAQ section */
+.faq-section {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+}
+
+.faq-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 1.25rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: var(--background-alt);
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.faq-item.open .faq-question::after {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    padding: 0 1.25rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+    margin: 0;
+    padding-bottom: 1.25rem;
+    color: var(--text-light);
+}
+
+/* Notification Container Styles */
+.notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: #333;
+    border-radius: 8px;
+    padding: 12px 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.3s ease-in-out;
+}
+
+.notification .notification-message {
+    flex-grow: 1;
+    font-size: 0.95rem;
+}
+
+.notification .notification-close {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #777;
+    transition: color 0.2s;
+}
+
+.notification .notification-close:hover {
+    color: #333;
+}
+
+.notification.success {
+    border-left: 4px solid var(--download-secondary);
+}
+
+.notification.error {
+    border-left: 4px solid var(--download-danger);
+}
+
+.notification.info {
+    border-left: 4px solid var(--download-primary);
+}
+
+.notification.hiding {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+/* Animation when notification appears */
+.notification-container .notification {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Animation classes */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .download-heading h2 {
+        font-size: 2rem;
+    }
+    
+    .download-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .installation-guide h2, 
+    .faq-section h2 {
+        font-size: 1.75rem;
+    }
+    
+    .tab-navigation {
+        flex-wrap: nowrap;
+    }
+    
+    .tab-link {
+        padding: 0.75rem 1rem;
+    }
+} 

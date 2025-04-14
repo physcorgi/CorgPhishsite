@@ -1,0 +1,130 @@
+{
+  "currentVersion": "1.2.0",
+  "releaseDate": "2023-06-15",
+  "platforms": {
+    "windows": {
+      "version": "1.2.0",
+      "filename": "corgphish-win-1.2.0.exe",
+      "size": "24.5 MB",
+      "checksum": "e7c8a7f5b26d8a9f6a9b1d3a1e7b3c5d9f1b3a5e7c9f5b3a1e7c9b5a3e1c7b5a9"
+    },
+    "macos": {
+      "version": "1.2.0",
+      "filename": "corgphish-mac-1.2.0.dmg",
+      "size": "32.2 MB",
+      "checksum": "a1c3e5b7d9f1a3c5e7b9d1f3a5c7e9b1d3f5a7c9e1b3d5f7a9c1e3b5d7f9a1c3e"
+    },
+    "linux": {
+      "deb": {
+        "version": "1.2.0",
+        "filename": "corgphish-linux-1.2.0.deb",
+        "size": "18.7 MB",
+        "checksum": "b3a1c5e7d9f1b3a5c7e9b1d3f5a7c9e1b3d5f7a9c1e3b5d7f9a1c3e5b7d9f1a3"
+      },
+      "rpm": {
+        "version": "1.2.0",
+        "filename": "corgphish-linux-1.2.0.rpm",
+        "size": "19.1 MB",
+        "checksum": "f1a3c5e7b9d1f3a5c7e9b1d3f5a7c9e1b3d5f7a9c1e3b5d7f9a1c3e5b7d9f1a3"
+      }
+    },
+    "extension": {
+      "version": "1.2.0",
+      "filename": "corgphish-extension-1.2.0.zip",
+      "size": "2.3 MB",
+      "checksum": "d9f1a3c5e7b9d1f3a5c7e9b1d3f5a7c9e1b3d5f7a9c1e3b5d7f9a1c3e5b7d9f1"
+    }
+  },
+  "releaseNotes": [
+    {
+      "version": "1.2.0",
+      "date": "2023-06-15",
+      "changes": [
+        {
+          "type": "feature",
+          "description": "Added support for detecting homograph attacks in domain names"
+        },
+        {
+          "type": "feature",
+          "description": "Improved visual similarity detection with new AI model"
+        },
+        {
+          "type": "improvement",
+          "description": "Reduced CPU usage by optimizing the scanning algorithm"
+        },
+        {
+          "type": "fix",
+          "description": "Fixed false positives on legitimate banking websites"
+        },
+        {
+          "type": "fix",
+          "description": "Resolved extension crash when analyzing complex pages"
+        }
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "date": "2023-03-10",
+      "changes": [
+        {
+          "type": "feature",
+          "description": "Added dark mode support"
+        },
+        {
+          "type": "feature",
+          "description": "Implemented browser sync for whitelisted sites"
+        },
+        {
+          "type": "improvement",
+          "description": "Enhanced URL analysis for better detection rates"
+        },
+        {
+          "type": "fix",
+          "description": "Fixed memory leak during prolonged browsing sessions"
+        }
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "date": "2023-01-05",
+      "changes": [
+        {
+          "type": "feature",
+          "description": "Initial release with core phishing detection"
+        },
+        {
+          "type": "feature",
+          "description": "Real-time scanning of websites"
+        },
+        {
+          "type": "feature",
+          "description": "Warning notification system for suspicious sites"
+        },
+        {
+          "type": "feature",
+          "description": "Basic whitelist management for trusted sites"
+        }
+      ]
+    }
+  ],
+  "minimumSystemRequirements": {
+    "windows": {
+      "os": "Windows 10 or later",
+      "processor": "2 GHz dual-core or better",
+      "memory": "4 GB RAM",
+      "storage": "100 MB available space"
+    },
+    "macos": {
+      "os": "macOS 10.14 or later",
+      "processor": "Intel Core i3 or Apple Silicon",
+      "memory": "4 GB RAM",
+      "storage": "120 MB available space"
+    },
+    "linux": {
+      "os": "Ubuntu 18.04, Fedora 30, or equivalent",
+      "processor": "2 GHz dual-core or better",
+      "memory": "4 GB RAM",
+      "storage": "100 MB available space"
+    }
+  }
+} 
