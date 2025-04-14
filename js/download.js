@@ -182,14 +182,24 @@ function updateReleaseNotes(releaseNotes) {
         const versionItem = document.createElement('div');
         versionItem.className = 'version-item';
         
-        // Create version header with badge
+        // Create version badge
         const versionBadge = document.createElement('div');
         versionBadge.className = `version-badge ${isLatest ? 'current' : ''}`;
-        versionBadge.innerHTML = `
-            <span class="version-number">v${release.version}</span>
-            <span class="version-date">${formatDate(release.date)}</span>
-            ${isLatest ? '<span class="version-label">Latest</span>' : ''}
-        `;
+        
+        // Create version header with information
+        const versionHeader = document.createElement('div');
+        versionHeader.className = 'version-header';
+        
+        const versionNumber = document.createElement('div');
+        versionNumber.className = 'version-number';
+        versionNumber.innerHTML = `v${release.version} ${isLatest ? '<span class="version-label">Latest</span>' : ''}`;
+        
+        const versionDate = document.createElement('div');
+        versionDate.className = 'version-date';
+        versionDate.textContent = formatDate(release.date);
+        
+        versionHeader.appendChild(versionNumber);
+        versionHeader.appendChild(versionDate);
         
         // Create change log content
         const versionContent = document.createElement('div');
@@ -216,7 +226,7 @@ function updateReleaseNotes(releaseNotes) {
         if (improvements.length) {
             changelogHTML += '<h4>Improvements</h4><ul>';
             improvements.forEach(improvement => {
-                changelogHTML += `<li><span class="tag tag-improvement">Improvement</span>${improvement.description}</li>`;
+                changelogHTML += `<li><span class="tag tag-improvement">Improve</span>${improvement.description}</li>`;
             });
             changelogHTML += '</ul>';
         }
@@ -235,6 +245,7 @@ function updateReleaseNotes(releaseNotes) {
         
         // Add to version item
         versionItem.appendChild(versionBadge);
+        versionItem.appendChild(versionHeader);
         versionItem.appendChild(versionContent);
         
         // Add to timeline

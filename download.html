@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/download.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
@@ -49,7 +52,12 @@
                 </div>
             </div>
             <div class="hero-image animate-on-scroll">
-                <img src="images/download-hero.png" alt="CorgPhish Download">
+                <div class="hero-device">
+                    <div class="device-screen">
+                        <img src="images/MAIN.png" alt="CorgPhish in action">
+                    </div>
+                    <div class="device-glare"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -139,19 +147,19 @@
         <!-- Windows Tab -->
         <div id="windows-tab" class="tab-content active">
             <div class="installation-step">
-                <h3>1. Download the installer</h3>
+                <h3 data-number="1">1. Download the installer</h3>
                 <p>Click the "Download for Windows" button above to get the latest version.</p>
             </div>
             <div class="installation-step">
-                <h3>2. Run the installer</h3>
+                <h3 data-number="2">2. Run the installer</h3>
                 <p>Double-click the downloaded .exe file and follow the installation wizard.</p>
             </div>
             <div class="installation-step">
-                <h3>3. Launch CorgPhish</h3>
+                <h3 data-number="3">3. Launch CorgPhish</h3>
                 <p>Once installed, you can find CorgPhish in your Start menu or desktop.</p>
             </div>
             <div class="installation-step">
-                <h3>4. Browser Integration</h3>
+                <h3 data-number="4">4. Browser Integration</h3>
                 <p>During first launch, you'll be prompted to install browser extensions for Chrome, Firefox, or Edge.</p>
             </div>
         </div>
@@ -159,19 +167,19 @@
         <!-- macOS Tab -->
         <div id="macos-tab" class="tab-content">
             <div class="installation-step">
-                <h3>1. Download the DMG file</h3>
+                <h3 data-number="1">1. Download the DMG file</h3>
                 <p>Click the "Download for macOS" button above to get the latest version.</p>
             </div>
             <div class="installation-step">
-                <h3>2. Open the DMG file</h3>
+                <h3 data-number="2">2. Open the DMG file</h3>
                 <p>Double-click the downloaded .dmg file to mount it.</p>
             </div>
             <div class="installation-step">
-                <h3>3. Install CorgPhish</h3>
+                <h3 data-number="3">3. Install CorgPhish</h3>
                 <p>Drag the CorgPhish app to your Applications folder.</p>
             </div>
             <div class="installation-step">
-                <h3>4. First Launch</h3>
+                <h3 data-number="4">4. First Launch</h3>
                 <p>Right-click the app and select "Open" to bypass Gatekeeper warnings on first launch.</p>
                 <div class="code-block">
                     <code>sudo spctl --master-disable</code>
@@ -184,25 +192,25 @@
         <!-- Linux Tab -->
         <div id="linux-tab" class="tab-content">
             <div class="installation-step">
-                <h3>1. Download the package</h3>
+                <h3 data-number="1">1. Download the package</h3>
                 <p>Click the "Download for Linux" button above to get the latest .deb package.</p>
             </div>
             <div class="installation-step">
-                <h3>2. Install using apt (Debian/Ubuntu)</h3>
+                <h3 data-number="2">2. Install using apt (Debian/Ubuntu)</h3>
                 <div class="code-block">
                     <code>sudo apt install ./corgphish-linux-1.2.0.deb</code>
                     <button class="copy-command" data-command="sudo apt install ./corgphish-linux-1.2.0.deb">Copy</button>
                 </div>
             </div>
             <div class="installation-step">
-                <h3>3. Or install using RPM (Fedora/RHEL)</h3>
+                <h3 data-number="3">3. Or install using RPM (Fedora/RHEL)</h3>
                 <div class="code-block">
                     <code>sudo rpm -i corgphish-linux-1.2.0.rpm</code>
                     <button class="copy-command" data-command="sudo rpm -i corgphish-linux-1.2.0.rpm">Copy</button>
                 </div>
             </div>
             <div class="installation-step">
-                <h3>4. Launch from terminal</h3>
+                <h3 data-number="4">4. Launch from terminal</h3>
                 <div class="code-block">
                     <code>corgphish</code>
                     <button class="copy-command" data-command="corgphish">Copy</button>
@@ -213,22 +221,22 @@
         <!-- Browser Extension Tab -->
         <div id="browser-tab" class="tab-content">
             <div class="installation-step">
-                <h3>1. Chrome Extension</h3>
+                <h3 data-number="1">1. Chrome Extension</h3>
                 <p>Install directly from the Chrome Web Store:</p>
                 <a href="https://chrome.google.com/webstore/detail/corgphish/fakeextensionid" target="_blank" class="download-btn secondary">Chrome Web Store</a>
             </div>
             <div class="installation-step">
-                <h3>2. Firefox Add-on</h3>
+                <h3 data-number="2">2. Firefox Add-on</h3>
                 <p>Install directly from Firefox Add-ons:</p>
                 <a href="https://addons.mozilla.org/en-US/firefox/addon/corgphish/" target="_blank" class="download-btn secondary">Firefox Add-ons</a>
             </div>
             <div class="installation-step">
-                <h3>3. Edge Extension</h3>
+                <h3 data-number="3">3. Edge Extension</h3>
                 <p>Install directly from Microsoft Store:</p>
                 <a href="https://microsoftedge.microsoft.com/addons/detail/corgphish/fakeextensionid" target="_blank" class="download-btn secondary">Microsoft Store</a>
             </div>
             <div class="installation-step">
-                <h3>4. Manual Installation</h3>
+                <h3 data-number="4">4. Manual Installation</h3>
                 <p>You can also download the extension files directly and install them manually:</p>
                 <button class="download-btn" data-platform="extension" data-file="corgphish-extension-1.2.0.zip">
                     Download Extension Package
@@ -290,7 +298,7 @@
             
             <div class="version-cta">
                 <p>Want to see all changes and previous versions?</p>
-                <a href="https://github.com/corgphish/corgphish/releases" target="_blank" class="btn btn-outline">View All Releases</a>
+                <a href="https://github.com/corgphish/corgphish/releases" target="_blank" class="btn-outline">View All Releases</a>
             </div>
         </div>
     </section>
