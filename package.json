@@ -1,0 +1,30 @@
+{
+  "name": "corgphish-website",
+  "version": "1.0.0",
+  "description": "CorgPhish - Умная защита от фишинга",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "postcss css/styles.css -o dist/css/styles.css",
+    "build:js": "terser js/main.js -o dist/js/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "phishing",
+    "security",
+    "browser-extension",
+    "ai",
+    "machine-learning"
+  ],
+  "author": "physcorgi",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^11.0.0",
+    "terser": "^5.24.0"
+  }
+} 

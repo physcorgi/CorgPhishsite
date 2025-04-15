@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://corgphish.ru/sitemap.xml
 
 # Запретить доступ к служебным файлам
 Disallow: /.htaccess
