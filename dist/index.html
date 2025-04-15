@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorgPhish - Интеллектуальная защита от фишинга</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="description" content="CorgPhish - умная защита от фишинга в режиме реального времени с точностью обнаружения 97.2%">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="CorgPhish Logo">
+                <span>CorgPhish</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Возможности</a>
+                <a href="#how-it-works">Как это работает</a>
+                <a href="#screenshots">Скриншоты</a>
+                <a href="#stats">Статистика</a>
+                <a href="#docs">Документация</a>
+            </div>
+            <div class="cta-buttons">
+                <a href="https://github.com/physcorgi/CorgPhish" class="btn btn-github"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#download" class="btn btn-primary">Скачать</a>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Умная защита от фишинга в режиме реального времени</h1>
+                <p>CorgPhish использует искусственный интеллект для мгновенного обнаружения фишинговых сайтов с точностью 97.2%, защищая ваши данные и конфиденциальность.</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary btn-lg">Установить расширение</a>
+                    <a href="#how-it-works" class="btn btn-outline btn-lg">Узнать больше</a>
+                </div>
+                <div class="badges">
+                    <img src="https://img.shields.io/badge/version-1.0.1-blue.svg" alt="Version">
+                    <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
+                    <img src="https://img.shields.io/github/stars/physcorgi/CorgPhish?style=social" alt="Stars">
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/MAIN.png" alt="CorgPhish Demo">
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Основные возможности</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Мгновенное обнаружение</h3>
+                    <p>Обнаружение фишинговых сайтов на основе AI/ML в режиме реального времени</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Автономная работа</h3>
+                    <p>Работает полностью автономно без отправки данных на сервер</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Многофакторный анализ</h3>
+                    <p>Анализирует более 50 признаков фишинга для точного определения угроз</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Визуальные предупреждения</h3>
+                    <p>Яркие и понятные предупреждения о потенциальных угрозах</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Детальная информация</h3>
+                    <p>Подробная информация о факторах риска и рекомендации</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Низкое потребление ресурсов</h3>
+                    <p>Оптимизированная работа с минимальной нагрузкой на систему</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="stats">
+        <div class="container">
+            <h2>Эффективность защиты</h2>
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <h3>97.2%</h3>
+                    <p>Точность</p>
+                </div>
+                <div class="stat-card">
+                    <h3>96.5%</h3>
+                    <p>Precision</p>
+                </div>
+                <div class="stat-card">
+                    <h3>95.8%</h3>
+                    <p>Recall</p>
+                </div>
+                <div class="stat-card">
+                    <h3>96.1%</h3>
+                    <p>F1-Score</p>
+                </div>
+                <div class="stat-card">
+                    <h3>120 мс</h3>
+                    <p>Время отклика</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>Как это работает</h2>
+            <div class="workflow">
+                <div class="workflow-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Анализ страницы</h3>
+                        <p>При посещении веб-страницы расширение автоматически анализирует её содержимое</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Извлечение признаков</h3>
+                        <p>Расширение извлекает более 50 признаков из URL и DOM-структуры страницы</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Анализ модели ML</h3>
+                        <p>Модель машинного обучения вычисляет вероятность того, что сайт является фишинговым</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Оценка риска</h3>
+                        <p>Расширение определяет уровень угрозы на основе комплексного анализа</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Уведомление пользователя</h3>
+                        <p>Пользователю отображается результат анализа и рекомендации по дальнейшим действиям</p>
+                    </div>
+                </div>
+            </div>
+            <div class="how-it-works-image">
+                <img src="images/howitworks.png" alt="Как работает CorgPhish">
+            </div>
+        </div>
+    </section>
+
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2>Скриншоты</h2>
+            <div class="screenshots-slider">
+                <div class="screenshot">
+                    <img src="images/MAIN.png" alt="Обнаружение фишинга">
+                    <div class="screenshot-caption">Обнаружение фишингового сайта</div>
+                </div>
+                <div class="screenshot">
+                    <img src="images/sett.png" alt="Настройки расширения">
+                    <div class="screenshot-caption">Настройки расширения</div>
+                </div>
+            </div>
+            <div class="slider-navigation">
+                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <div class="container">
+            <h2>Скачать CorgPhish</h2>
+            <div class="download-options">
+                <div class="download-option">
+                    <div class="browser-icon">
+                        <i class="fab fa-chrome"></i>
+                    </div>
+                    <h3>Chrome Extension</h3>
+                    <p>Установите для Google Chrome, Brave, Edge и других Chrome-подобных браузеров</p>
+                    <a href="https://github.com/physcorgi/CorgPhish/releases" class="btn btn-primary">Скачать для Chrome</a>
+                </div>
+                <div class="download-option">
+                    <div class="browser-icon">
+                        <i class="fab fa-firefox"></i>
+                    </div>
+                    <h3>Firefox Add-on</h3>
+                    <p>Установите для Mozilla Firefox и Firefox-подобных браузеров</p>
+                    <a href="https://github.com/physcorgi/CorgPhish/releases" class="btn btn-primary">Скачать для Firefox</a>
+                </div>
+            </div>
+            <div class="manual-install">
+                <h3>Установка из исходного кода</h3>
+                <div class="code-block">
+                    <pre><code># Клонировать репозиторий
+git clone https://github.com/physcorgi/CorgPhish.git
+cd CorgPhish
+
+# Установить зависимости
+pip install -r requirements.txt
+
+# Собрать проект
+python3 build.py
+
+# Загрузить расширение в браузер из папки dist/browser_extension</code></pre>
+                </div>
+                <a href="docs/INSTALLATION.md" class="btn btn-outline">Подробная инструкция</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="docs" class="docs">
+        <div class="container">
+            <h2>Документация</h2>
+            <div class="docs-cards">
+                <a href="docs/guides/USER_GUIDE.md" class="doc-card">
+                    <div class="doc-icon"><i class="fas fa-book-reader"></i></div>
+                    <h3>Руководство пользователя</h3>
+                    <p>Узнайте, как использовать все возможности расширения CorgPhish</p>
+                </a>
+                <a href="docs/INSTALLATION.md" class="doc-card">
+                    <div class="doc-icon"><i class="fas fa-download"></i></div>
+                    <h3>Руководство по установке</h3>
+                    <p>Подробные инструкции по установке для различных браузеров</p>
+                </a>
+                <a href="docs/guides/DEVELOPER_GUIDE.md" class="doc-card">
+                    <div class="doc-icon"><i class="fas fa-code"></i></div>
+                    <h3>Руководство разработчика</h3>
+                    <p>Информация для тех, кто хочет внести вклад в проект</p>
+                </a>
+                <a href="docs/PROJECT_DOCUMENTATION.md" class="doc-card">
+                    <div class="doc-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3>Полная документация</h3>
+                    <p>Подробное описание архитектуры и принципов работы</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="roadmap">
+        <div class="container">
+            <h2>Дорожная карта</h2>
+            <div class="timeline">
+                <div class="timeline-section completed">
+                    <h3>Реализовано</h3>
+                    <ul class="timeline-list">
+                        <li><i class="fas fa-check-circle"></i> Базовая функциональность обнаружения</li>
+                        <li><i class="fas fa-check-circle"></i> Пользовательский интерфейс</li>
+                        <li><i class="fas fa-check-circle"></i> Демонстрационная среда</li>
+                        <li><i class="fas fa-check-circle"></i> Реорганизация структуры проекта</li>
+                        <li><i class="fas fa-check-circle"></i> Режим "Глубокого сканирования"</li>
+                        <li><i class="fas fa-check-circle"></i> Интеграция с Google Safe Browsing API</li>
+                        <li><i class="fas fa-check-circle"></i> Аналитика фишинговых угроз</li>
+                        <li><i class="fas fa-check-circle"></i> Переработанный интерфейс настроек</li>
+                    </ul>
+                </div>
+                <div class="timeline-section upcoming">
+                    <h3>В разработке</h3>
+                    <ul class="timeline-list">
+                        <li><i class="fas fa-clock"></i> История проверок с возможностью экспорта</li>
+                        <li><i class="fas fa-clock"></i> Централизованная база данных фишинговых образцов</li>
+                        <li><i class="fas fa-clock"></i> Географическая статистика угроз</li>
+                        <li><i class="fas fa-clock"></i> Локализация на дополнительные языки</li>
+                        <li><i class="fas fa-clock"></i> Публикация в магазинах расширений</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contribute">
+        <div class="container">
+            <h2>Внесите свой вклад в проект</h2>
+            <p>Мы приветствуем любую помощь в развитии проекта! Присоединяйтесь к нам и помогите сделать интернет безопаснее.</p>
+            <div class="contribute-image">
+                <img src="images/contr.png" alt="Контрибьюторы">
+            </div>
+            <a href="docs/CONTRIBUTING.md" class="btn btn-primary btn-lg">Руководство по внесению вклада</a>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Связаться с нами</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>physcorgi@proton.me</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p><a href="https://github.com/physcorgi/CorgPhish">github.com/physcorgi/CorgPhish</a></p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="CorgPhish Logo">
+                    <p>CorgPhish - Умная защита от фишинга</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Ресурсы</h3>
+                        <a href="docs/guides/USER_GUIDE.md">Руководство пользователя</a>
+                        <a href="docs/INSTALLATION.md">Руководство по установке</a>
+                        <a href="docs/guides/DEVELOPER_GUIDE.md">Руководство разработчика</a>
+                        <a href="docs/PROJECT_DOCUMENTATION.md">Полная документация</a>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Сообщество</h3>
+                        <a href="https://github.com/physcorgi/CorgPhish/issues">Сообщить об ошибке</a>
+                        <a href="https://github.com/physcorgi/CorgPhish/discussions">Обсуждения</a>
+                        <a href="docs/CONTRIBUTING.md">Внести вклад</a>
+                        <a href="docs/CODE_OF_CONDUCT.md">Кодекс поведения</a>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Связаться с нами</h3>
+                        <a href="https://github.com/physcorgi/CorgPhish"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="mailto:physcorgi@proton.me"><i class="fas fa-envelope"></i> Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 CorgPhish. Все права защищены. <a href="LICENSE.md">Лицензия MIT</a></p>
+                <div class="social-links">
+                    <a href="https://github.com/physcorgi/CorgPhish"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
