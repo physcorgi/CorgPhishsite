@@ -532,4 +532,250 @@ footer {
     .footer-links-column {
         text-align: center;
     }
+}
+
+/* Версия и лицензия */
+.version-info {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.version-tag, .license-tag {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.version-tag {
+    background-color: rgba(79, 70, 229, 0.1);
+    color: var(--primary-color);
+}
+
+.license-tag {
+    background-color: rgba(34, 197, 94, 0.1);
+    color: var(--success-color);
+}
+
+/* Графика на hero-секции */
+.hero-graphic {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.security-graphic {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shield-icon {
+    position: absolute;
+    font-size: 120px;
+    color: var(--primary-color);
+    z-index: 2;
+    animation: pulse 2s infinite;
+}
+
+.protection-indicator {
+    position: relative;
+    width: 280px;
+    height: 280px;
+}
+
+.protection-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 10px solid rgba(79, 70, 229, 0.3);
+    border-radius: 50%;
+    animation: rotate 10s linear infinite;
+}
+
+.protection-ring::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 10px solid rgba(79, 70, 229, 0.1);
+    border-radius: 50%;
+}
+
+.protection-text {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 3;
+}
+
+.protection-percentage {
+    display: block;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--success-color);
+    line-height: 1;
+}
+
+.protection-label {
+    display: block;
+    font-size: 18px;
+    color: var(--light-text);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+}
+
+/* Визуальное представление защиты */
+.protection-visual {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.protection-circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(79, 70, 229, 0.05);
+    overflow: hidden;
+}
+
+.protection-icon {
+    font-size: 80px;
+    color: var(--primary-color);
+    z-index: 2;
+}
+
+.protection-meter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.meter-fill {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(to top, rgba(79, 70, 229, 0.2), rgba(79, 70, 229, 0.05));
+    animation: fillMeter 2s ease-out forwards;
+}
+
+@keyframes fillMeter {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+/* Блок других платформ */
+.other-platforms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.platform-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: var(--light-bg);
+    width: calc(25% - 15px);
+    transition: var(--transition);
+}
+
+.platform-link i {
+    font-size: 32px;
+    color: var(--primary-color);
+}
+
+.platform-link span {
+    font-weight: 500;
+}
+
+.platform-link:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
+    background-color: rgba(79, 70, 229, 0.05);
+}
+
+@media (max-width: 768px) {
+    .platform-link {
+        width: calc(50% - 10px);
+    }
+    
+    .hero-content, .hero-graphic {
+        width: 100%;
+    }
+    
+    .security-graphic {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .shield-icon {
+        font-size: 80px;
+    }
+    
+    .protection-indicator {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .protection-percentage {
+        font-size: 36px;
+    }
+    
+    .protection-label {
+        font-size: 16px;
+    }
 } 

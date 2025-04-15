@@ -4,30 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CorgPhish - Интеллектуальная защита от фишинга</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <meta name="description" content="CorgPhish - умная защита от фишинга в режиме реального времени с точностью обнаружения 97.2%">
 </head>
 <body>
     <header>
         <nav class="container">
             <div class="logo">
-                <img src="./images/logo.png" alt="CorgPhish Logo">
+                <img src="images/logo.png" alt="CorgPhish Logo">
                 <span>CorgPhish</span>
             </div>
             <div class="nav-links">
                 <a href="#features">Возможности</a>
                 <a href="#how-it-works">Как это работает</a>
-                <a href="#screenshots">Скриншоты</a>
                 <a href="#stats">Статистика</a>
+                <a href="#download">Скачать</a>
                 <a href="#docs">Документация</a>
             </div>
             <div class="cta-buttons">
-                <a href="https://github.com/physcorgi/CorgPhish" class="btn btn-github"><i class="fab fa-github"></i> GitHub</a>
                 <a href="#download" class="btn btn-primary">Скачать</a>
             </div>
             <div class="hamburger">
@@ -47,14 +46,24 @@
                     <a href="#download" class="btn btn-primary btn-lg">Установить расширение</a>
                     <a href="#how-it-works" class="btn btn-outline btn-lg">Узнать больше</a>
                 </div>
-                <div class="badges">
-                    <img src="https://img.shields.io/badge/version-1.0.1-blue.svg" alt="Version">
-                    <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
-                    <img src="https://img.shields.io/github/stars/physcorgi/CorgPhish?style=social" alt="Stars">
+                <div class="version-info">
+                    <span class="version-tag">Версия 1.0.1</span>
+                    <span class="license-tag">MIT License</span>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="./images/MAIN.png" alt="CorgPhish Demo">
+            <div class="hero-graphic">
+                <div class="security-graphic">
+                    <div class="shield-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="protection-indicator">
+                        <div class="protection-ring"></div>
+                        <div class="protection-text">
+                            <span class="protection-percentage">100%</span>
+                            <span class="protection-label">Защита</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -177,32 +186,15 @@
                     </div>
                 </div>
             </div>
-            <div class="how-it-works-image">
-                <img src="./images/howitworks.png" alt="Как работает CorgPhish">
-            </div>
-        </div>
-    </section>
-
-    <section id="screenshots" class="screenshots">
-        <div class="container">
-            <h2>Скриншоты</h2>
-            <div class="screenshots-slider">
-                <div class="screenshot">
-                    <img src="./images/MAIN.png" alt="Обнаружение фишинга">
-                    <div class="screenshot-caption">Обнаружение фишингового сайта</div>
+            <div class="protection-visual">
+                <div class="protection-circle">
+                    <div class="protection-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="protection-meter">
+                        <div class="meter-fill"></div>
+                    </div>
                 </div>
-                <div class="screenshot">
-                    <img src="./images/sett.png" alt="Настройки расширения">
-                    <div class="screenshot-caption">Настройки расширения</div>
-                </div>
-            </div>
-            <div class="slider-navigation">
-                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
-                <div class="slider-dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                </div>
-                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
@@ -217,7 +209,7 @@
                     </div>
                     <h3>Chrome Extension</h3>
                     <p>Установите для Google Chrome, Brave, Edge и других Chrome-подобных браузеров</p>
-                    <a href="https://github.com/physcorgi/CorgPhish/releases" class="btn btn-primary">Скачать для Chrome</a>
+                    <a href="downloads/corgphish-extension-1.2.0.zip" class="btn btn-primary">Скачать для Chrome</a>
                 </div>
                 <div class="download-option">
                     <div class="browser-icon">
@@ -225,23 +217,28 @@
                     </div>
                     <h3>Firefox Add-on</h3>
                     <p>Установите для Mozilla Firefox и Firefox-подобных браузеров</p>
-                    <a href="https://github.com/physcorgi/CorgPhish/releases" class="btn btn-primary">Скачать для Firefox</a>
+                    <a href="downloads/corgphish-extension-1.2.0.zip" class="btn btn-primary">Скачать для Firefox</a>
                 </div>
             </div>
             <div class="manual-install">
-                <h3>Установка из исходного кода</h3>
-                <div class="code-block">
-                    <pre><code># Клонировать репозиторий
-git clone https://github.com/physcorgi/CorgPhish.git
-cd CorgPhish
-
-# Установить зависимости
-pip install -r requirements.txt
-
-# Собрать проект
-python3 build.py
-
-# Загрузить расширение в браузер из папки dist/browser_extension</code></pre>
+                <h3>Другие платформы</h3>
+                <div class="other-platforms">
+                    <a href="downloads/corgphish-win-1.2.0.exe" class="platform-link">
+                        <i class="fab fa-windows"></i>
+                        <span>Windows</span>
+                    </a>
+                    <a href="downloads/corgphish-mac-1.2.0.dmg" class="platform-link">
+                        <i class="fab fa-apple"></i>
+                        <span>macOS</span>
+                    </a>
+                    <a href="downloads/corgphish-linux-1.2.0.deb" class="platform-link">
+                        <i class="fab fa-linux"></i>
+                        <span>Linux (Deb)</span>
+                    </a>
+                    <a href="downloads/corgphish-linux-1.2.0.rpm" class="platform-link">
+                        <i class="fab fa-fedora"></i>
+                        <span>Linux (RPM)</span>
+                    </a>
                 </div>
                 <a href="docs/INSTALLATION.md" class="btn btn-outline">Подробная инструкция</a>
             </div>
@@ -307,17 +304,6 @@ python3 build.py
         </div>
     </section>
 
-    <section class="contribute">
-        <div class="container">
-            <h2>Внесите свой вклад в проект</h2>
-            <p>Мы приветствуем любую помощь в развитии проекта! Присоединяйтесь к нам и помогите сделать интернет безопаснее.</p>
-            <div class="contribute-image">
-                <img src="./images/contr.png" alt="Контрибьюторы">
-            </div>
-            <a href="docs/CONTRIBUTING.md" class="btn btn-primary btn-lg">Руководство по внесению вклада</a>
-        </div>
-    </section>
-
     <section class="contact">
         <div class="container">
             <h2>Связаться с нами</h2>
@@ -329,9 +315,9 @@ python3 build.py
                         <p>physcorgi@proton.me</p>
                     </div>
                     <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <h3>GitHub</h3>
-                        <p><a href="https://github.com/physcorgi/CorgPhish">github.com/physcorgi/CorgPhish</a></p>
+                        <i class="fas fa-globe"></i>
+                        <h3>Сайт</h3>
+                        <p>www.corgphish.com</p>
                     </div>
                 </div>
                 <form class="contact-form" id="contactForm">
@@ -354,7 +340,7 @@ python3 build.py
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="./images/logo.png" alt="CorgPhish Logo">
+                    <img src="images/logo.png" alt="CorgPhish Logo">
                     <p>CorgPhish - Умная защита от фишинга</p>
                 </div>
                 <div class="footer-links">
@@ -367,23 +353,19 @@ python3 build.py
                     </div>
                     <div class="footer-links-column">
                         <h3>Сообщество</h3>
-                        <a href="https://github.com/physcorgi/CorgPhish/issues">Сообщить об ошибке</a>
-                        <a href="https://github.com/physcorgi/CorgPhish/discussions">Обсуждения</a>
+                        <a href="about.html">О нас</a>
+                        <a href="download.html">Скачать</a>
                         <a href="docs/CONTRIBUTING.md">Внести вклад</a>
                         <a href="docs/CODE_OF_CONDUCT.md">Кодекс поведения</a>
                     </div>
                     <div class="footer-links-column">
                         <h3>Связаться с нами</h3>
-                        <a href="https://github.com/physcorgi/CorgPhish"><i class="fab fa-github"></i> GitHub</a>
                         <a href="mailto:physcorgi@proton.me"><i class="fas fa-envelope"></i> Email</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2025 CorgPhish. Все права защищены. <a href="LICENSE.md">Лицензия MIT</a></p>
-                <div class="social-links">
-                    <a href="https://github.com/physcorgi/CorgPhish"><i class="fab fa-github"></i></a>
-                </div>
             </div>
         </div>
     </footer>
