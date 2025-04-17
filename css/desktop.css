@@ -129,30 +129,16 @@ header {
 
 /* How it works section */
 .workflow-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    align-items: center;
     margin-top: 3rem;
-}
-
-.workflow-visual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.workflow-illustration {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .workflow-steps {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .workflow-step {
@@ -585,4 +571,43 @@ p {
 .activity-item:hover {
     transform: translateY(-5px);
     box-shadow: var(--card-shadow);
+}
+
+/* Video Container - Desktop styles */
+.video-container {
+    margin-top: 5rem;
+    padding-top: 4rem;
+}
+
+.video-container h3 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.video-placeholder {
+    max-width: 900px;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-placeholder:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
+}
+
+.video-placeholder-content i {
+    font-size: 4rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 } 
