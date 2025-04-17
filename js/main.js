@@ -1,57 +1,54 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Мобильное меню
     const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu') || document.createElement('div');
     const body = document.body;
     
     if (hamburger) {
-        // Создаем мобильное меню
-        const mobileMenu = document.createElement('div');
-        mobileMenu.className = 'mobile-menu';
-        
-        // Клонируем навигационные ссылки
-        const navLinks = document.querySelector('.nav-links');
-        if (navLinks) {
-            const links = navLinks.querySelectorAll('a');
-            links.forEach(link => {
-                const newLink = link.cloneNode(true);
-                mobileMenu.appendChild(newLink);
-            });
-        }
-        
-        // Добавляем CTA кнопки
-        const ctaButtons = document.querySelector('.cta-buttons');
-        if (ctaButtons) {
-            const mobileCta = document.createElement('div');
-            mobileCta.className = 'mobile-cta';
+        // Если мобильное меню не существует, создаем его
+        if (!document.querySelector('.mobile-menu')) {
+            mobileMenu.className = 'mobile-menu';
             
-            const buttons = ctaButtons.querySelectorAll('a');
-            buttons.forEach(button => {
-                const newButton = button.cloneNode(true);
-                mobileCta.appendChild(newButton);
-            });
+            // Клонируем навигационные ссылки
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks) {
+                const links = navLinks.querySelectorAll('a');
+                links.forEach(link => {
+                    const newLink = link.cloneNode(true);
+                    mobileMenu.appendChild(newLink);
+                });
+            }
             
-            mobileMenu.appendChild(mobileCta);
+            // Добавляем CTA кнопки
+            const ctaButtons = document.querySelector('.cta-buttons');
+            if (ctaButtons) {
+                const mobileCta = document.createElement('div');
+                mobileCta.className = 'mobile-cta';
+                
+                const buttons = ctaButtons.querySelectorAll('a');
+                buttons.forEach(button => {
+                    const newButton = button.cloneNode(true);
+                    mobileCta.appendChild(newButton);
+                });
+                
+                mobileMenu.appendChild(mobileCta);
+            }
+            
+            // Добавляем меню в DOM
+            body.appendChild(mobileMenu);
         }
-        
-        // Добавляем меню в DOM
-        body.appendChild(mobileMenu);
         
         // Обработчик клика по гамбургеру
-        hamburger.addEventListener('click', function() {
+        hamburger.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent event bubbling
             mobileMenu.classList.toggle('active');
             hamburger.classList.toggle('active');
             
-            // Анимация гамбургера
-            const bars = hamburger.querySelectorAll('.bar');
-            if (hamburger.classList.contains('active')) {
-                bars[0].style.transform = 'rotate(-45deg) translate(-5px, 6px)';
-                bars[1].style.opacity = '0';
-                bars[2].style.transform = 'rotate(45deg) translate(-5px, -6px)';
+            // Toggle body scroll
+            if (mobileMenu.classList.contains('active')) {
+                body.style.overflow = 'hidden';
             } else {
-                bars.forEach(bar => {
-                    bar.style.transform = 'none';
-                    bar.style.opacity = '1';
-                });
+                body.style.overflow = '';
             }
         });
         
@@ -60,13 +57,20 @@ document.addEventListener('DOMContentLoaded', function() {
             link.addEventListener('click', function() {
                 mobileMenu.classList.remove('active');
                 hamburger.classList.remove('active');
-                
-                const bars = hamburger.querySelectorAll('.bar');
-                bars.forEach(bar => {
-                    bar.style.transform = 'none';
-                    bar.style.opacity = '1';
-                });
+                body.style.overflow = '';
             });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (mobileMenu.classList.contains('active') && 
+                !mobileMenu.contains(e.target) && 
+                e.target !== hamburger &&
+                !hamburger.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+                body.style.overflow = '';
+            }
         });
     }
     
@@ -202,14 +206,18 @@ document.addEventListener('DOMContentLoaded', function() {
             header.classList.remove('scrolled');
         }
         
-        if (currentScrollPosition > lastScrollPosition && currentScrollPosition > 200) {
-            header.style.transform = 'translateY(-100%)';
-        } else {
-            header.style.transform = 'translateY(0)';
-        }
-        
         lastScrollPosition = currentScrollPosition;
     });
+    
+    // Fix for iOS Safari viewport height issue
+    function setDocHeight() {
+        document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+    }
+    
+    // Set the --vh variable on page load and resize
+    setDocHeight();
+    window.addEventListener('resize', setDocHeight);
+    window.addEventListener('orientationchange', setDocHeight);
 
     // Contact form handling
     const contactForm = document.getElementById('contactForm');
