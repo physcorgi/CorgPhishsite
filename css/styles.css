@@ -1,4 +1,3 @@
-/* Import desktop styles */
 @import url('desktop.css') screen and (min-width: 1024px);
 
 /* Reset CSS */
