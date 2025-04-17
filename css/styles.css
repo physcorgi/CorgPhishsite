@@ -391,6 +391,13 @@ header .container {
     margin-bottom: 1.5rem;
     color: var(--primary-color);
     transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon i {
+    font-size: 32px; /* Explicitly set font size for icons */
 }
 
 /* Buttons */
@@ -563,18 +570,20 @@ header .container {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
 }
 
 .timeline-section.completed h3:before {
     content: '\f058';
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     color: var(--success-color);
 }
 
 .timeline-section.upcoming h3:before {
     content: '\f254';
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     color: var(--primary-color);
 }
@@ -596,6 +605,8 @@ header .container {
     left: 0;
     top: 0.25rem;
     font-size: 1rem;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
 }
 
 .timeline-section.completed .timeline-list li i {
@@ -1085,4 +1096,44 @@ footer {
 /* Animation for theme transitions */
 .theme-transition {
     transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Fix for other icon areas */
+.step-icon i, 
+.doc-icon i,
+.indicator-icon i,
+.video-placeholder-content i,
+.demo-placeholder-content i,
+.btn i,
+.github-btn i,
+.exclusive-badge i,
+.footer-links-column a i {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+}
+
+/* Brand icons need a different font family */
+.fab {
+    font-family: 'Font Awesome 6 Brands' !important;
+    font-weight: 400 !important;
+}
+
+/* Additional fix for Font Awesome SVG with JS */
+.svg-inline--fa {
+    display: inline-block;
+    height: 1em;
+    vertical-align: -0.125em;
+    overflow: visible;
+}
+
+/* Fix for specific icons when displayed with Font Awesome SVG+JS method */
+.feature-icon svg,
+.indicator-icon svg,
+.step-icon svg,
+.doc-icon svg,
+.btn svg,
+.github-btn svg {
+    width: 1em;
+    height: 1em;
+    font-size: inherit;
 }

@@ -379,14 +379,14 @@ header .container {
 
 .timeline-section.completed h3:before {
     content: '\f058';
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     color: var(--success-color);
 }
 
 .timeline-section.upcoming h3:before {
     content: '\f254';
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     color: var(--primary-color);
 }
