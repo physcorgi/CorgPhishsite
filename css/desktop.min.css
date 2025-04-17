@@ -494,108 +494,117 @@ p {
     }
 }
 
-/* GitHub Repository Section - Desktop */
-.github-repo-details {
+/* Installation Section - Desktop */
+.installation-container {
     padding: 3rem;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 3rem;
 }
 
-.repo-header {
+.github-exclusive {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    margin-bottom: 0;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.repo-name {
-    margin-bottom: 0;
-}
-
-.repo-stats {
-    display: flex;
-    justify-content: space-around;
-    gap: 1rem;
-    margin-bottom: 0;
-    padding-bottom: 2.5rem;
-}
-
-.stat-item i {
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
-}
-
-.stat-number {
-    font-size: 2rem;
-}
-
-.repo-buttons {
-    display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 0;
-    padding-bottom: 2.5rem;
+    gap: 2rem;
+    padding-bottom: 3rem;
 }
 
-.github-button {
-    min-width: 180px;
+.exclusive-badge {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+}
+
+.download-note {
+    max-width: none;
+    text-align: left;
+    margin: 0;
     font-size: 1.1rem;
 }
 
-.github-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.installation-steps {
+    padding-bottom: 3rem;
 }
 
-.activity-header h4 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.activity-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-.activity-item {
-    background-color: var(--light-bg);
-    padding: 1.5rem;
-    border-radius: 8px;
-    transition: var(--transition);
-}
-
-.activity-item:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--card-shadow);
-}
-
-/* Video Container - Desktop styles */
-.video-container {
-    margin-top: 5rem;
-    padding-top: 4rem;
-}
-
-.video-container h3 {
+.installation-steps h3 {
     font-size: 1.75rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
-.video-placeholder {
-    max-width: 900px;
-    box-shadow: var(--shadow-md);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.steps-container {
+    gap: 2.5rem;
 }
 
-.video-placeholder:hover {
-    transform: translateY(-5px);
+.installation-step {
+    padding: 2rem;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.installation-step:hover {
+    transform: translateY(-8px);
     box-shadow: var(--hover-shadow);
 }
 
-.video-placeholder-content i {
+.installation-step:hover .step-icon {
+    transform: translateY(-50%) scale(1.2);
+    opacity: 1;
+}
+
+.step-circle {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+}
+
+.step-content h4 {
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+}
+
+.step-content p {
+    font-size: 1.1rem;
+}
+
+.download-actions {
+    gap: 2rem;
+}
+
+.download-btn, .github-link {
+    max-width: 320px;
+    font-size: 1.2rem;
+    padding: 1.25rem 2rem;
+}
+
+/* Demo Container - Desktop */
+.demo-container {
+    margin-top: 5rem;
+}
+
+.demo-container h3 {
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.browser-tabs {
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.browser-tab {
+    font-size: 1.1rem;
+    padding: 1rem 3rem;
+}
+
+.demo-content {
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: var(--card-shadow);
+    border-radius: 0 12px 12px 12px;
+}
+
+.demo-placeholder-content i {
     font-size: 4rem;
     animation: pulse 2s infinite;
 }
