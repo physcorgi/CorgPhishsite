@@ -1,5 +1,3 @@
-@import url('desktop.css') screen and (min-width: 1024px);
-
 /* Reset CSS */
 *, *::before, *::after {
     margin: 0;
