@@ -238,11 +238,14 @@ header .container {
     display: inline-block;
     margin-left: 20px;
     position: relative;
+    z-index: 10;
 }
 
 .theme-toggle {
     opacity: 0;
     position: absolute;
+    width: 0;
+    height: 0;
 }
 
 .toggle-label {
@@ -250,40 +253,81 @@ header .container {
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    width: 50px;
-    height: 26px;
+    width: 60px;
+    height: 30px;
     background-color: var(--border-color);
-    border-radius: 100px;
+    border-radius: 30px;
     position: relative;
-    padding: 5px;
-    transition: var(--transition);
+    padding: 5px 8px;
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+}
+
+.toggle-label:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(106, 90, 205, 0.3);
 }
 
 .toggle-label .fa-sun {
     color: #f6e05e;
+    font-size: 14px;
+    transition: all 0.4s ease;
 }
 
 .toggle-label .fa-moon {
     color: #a0aec0;
+    font-size: 14px;
+    transition: all 0.4s ease;
 }
 
 .toggle-ball {
     position: absolute;
-    width: 22px;
-    height: 22px;
-    background-color: var(--bg-color);
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
     border-radius: 50%;
-    transition: var(--transition);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     transform: translateX(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.theme-toggle:checked + .toggle-label .toggle-ball {
-    transform: translateX(24px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .theme-toggle:checked + .toggle-label {
     background-color: var(--primary-color);
+}
+
+.theme-toggle:checked + .toggle-label .toggle-ball {
+    transform: translateX(30px);
+    background-color: white;
+}
+
+.theme-toggle:checked + .toggle-label .fa-sun {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.theme-toggle:checked + .toggle-label .fa-moon {
+    color: white;
+}
+
+/* Focus state for accessibility */
+.theme-toggle:focus + .toggle-label {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Add animation to icons on toggle */
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.theme-toggle:checked + .toggle-label .fa-moon {
+    animation: rotate 0.5s ease-in-out;
+}
+
+.theme-toggle:not(:checked) + .toggle-label .fa-sun {
+    animation: rotate 0.5s ease-in-out;
 }
 
 /* Navigation */
