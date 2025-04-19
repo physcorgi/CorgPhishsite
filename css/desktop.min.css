@@ -1,0 +1,622 @@
+/* Desktop Styles for CorgPhish - Applied for screens wider than 1024px */
+
+/* Base Layout */
+.container {
+    max-width: 1280px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    height: 80px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Hero section */
+.hero {
+    padding: 8rem 0 6rem;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+}
+
+.hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.hero-graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo-container {
+    position: relative;
+}
+
+.main-logo {
+    width: 400px;
+    height: auto;
+    max-width: 100%;
+}
+
+.logo-glow {
+    position: absolute;
+    width: 140%;
+    height: 140%;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0) 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.security-indicators {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Features section */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.feature-card {
+    padding: 2.5rem;
+    min-height: 300px;
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+    margin-bottom: 1.5rem;
+}
+
+/* Stats section */
+.stats-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.stat-card {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+/* How it works section */
+.workflow-container {
+    margin-top: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.workflow-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.workflow-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background-color: var(--background-color);
+    position: relative;
+}
+
+.workflow-step:hover {
+    transform: translateX(10px);
+    background-color: var(--background-alt);
+    box-shadow: var(--shadow);
+}
+
+.workflow-step.active {
+    background-color: var(--background-alt);
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--primary-color);
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.step-content p {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-bottom: 0;
+}
+
+.step-icon {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+/* Download section */
+.github-card {
+    margin-top: 3rem;
+    padding: 3rem;
+    border-radius: 12px;
+    background-color: var(--background-alt);
+    box-shadow: var(--shadow);
+}
+
+.github-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.installation-guide {
+    margin-top: 3rem;
+}
+
+.installation-guide ol {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+/* Documentation section */
+.docs-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.doc-card {
+    padding: 2.5rem;
+}
+
+.doc-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+}
+
+/* Roadmap section */
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.timeline-section {
+    background-color: var(--bg-color);
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline-section:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-shadow);
+}
+
+.timeline-section.completed {
+    border-left: 4px solid var(--success-color);
+}
+
+.timeline-section.upcoming {
+    border-left: 4px solid var(--primary-color);
+}
+
+.timeline-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.timeline-section.completed h3:before {
+    content: '\f058';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--success-color);
+}
+
+.timeline-section.upcoming h3:before {
+    content: '\f254';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.timeline-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-list li {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.timeline-list li i {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+.timeline-section.completed .timeline-list li i {
+    color: var(--success-color);
+}
+
+/* GitHub contribution section */
+.github-contribution {
+    margin-top: 4rem;
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--bg-color);
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.github-contribution:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient-primary);
+}
+
+.github-contribution h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.github-contribution p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.github-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.github-btn {
+    min-width: 180px;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.github-btn:hover {
+    background-color: #f6f8fa;
+    border-color: #c8c9cb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.github-btn i {
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+}
+
+/* Footer */
+footer {
+    padding: 5rem 0 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 4rem;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+/* Typography */
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+/* Animations and hover effects */
+.feature-card:hover,
+.stat-card:hover,
+.doc-card:hover {
+    transform: translateY(-5px);
+}
+
+.nav-links a {
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced animations for the workflow steps */
+.workflow-step {
+    transition: all 0.3s ease;
+}
+
+.workflow-step:hover .step-number {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.workflow-step:hover .step-icon {
+    transform: translateY(-50%) scale(1.2);
+    opacity: 1;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1360px;
+    }
+    
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.35rem;
+    }
+    
+    .main-logo {
+        width: 450px;
+    }
+}
+
+/* Installation Section - Desktop */
+.installation-container {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.github-exclusive {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+
+.exclusive-badge {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+}
+
+.download-note {
+    max-width: none;
+    text-align: left;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.installation-steps {
+    padding-bottom: 3rem;
+}
+
+.installation-steps h3 {
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+}
+
+.steps-container {
+    gap: 2.5rem;
+}
+
+.installation-step {
+    padding: 2rem;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.installation-step:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--hover-shadow);
+}
+
+.installation-step:hover .step-icon {
+    transform: translateY(-50%) scale(1.2);
+    opacity: 1;
+}
+
+.step-circle {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+}
+
+.step-content h4 {
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+}
+
+.step-content p {
+    font-size: 1.1rem;
+}
+
+.download-actions {
+    gap: 2rem;
+}
+
+.download-btn, .github-link {
+    max-width: 320px;
+    font-size: 1.2rem;
+    padding: 1.25rem 2rem;
+}
+
+/* Demo Container - Desktop */
+.demo-container {
+    margin-top: 5rem;
+}
+
+.demo-container h3 {
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.browser-tabs {
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.browser-tab {
+    font-size: 1.1rem;
+    padding: 1rem 3rem;
+}
+
+.demo-content {
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: var(--card-shadow);
+    border-radius: 0 12px 12px 12px;
+}
+
+.demo-placeholder-content i {
+    font-size: 4rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+} 

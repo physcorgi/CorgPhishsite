@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Демо CorgPhish - Испытайте наш инструмент обнаружения фишинга</title>
     <meta name="description" content="Попробуйте интерактивное демо CorgPhish - увидите, как наша передовая технология обнаружения фишинга работает в реальном времени.">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/demo.css">
+    <link rel="stylesheet" href="./css/styles.min.css?v=1.0.2">
+    <link rel="stylesheet" href="./css/desktop.min.css?v=1.0.2" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="./css/demo.css?v=1.0.1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./images/favicon.png">
 </head>
 <body>
@@ -53,8 +54,8 @@
             <div class="demo-container">
                 <div class="url-input-container">
                     <div class="url-input-wrapper">
-                        <div class="url-prefix">https://</div>
-                        <input type="text" id="url-input" placeholder="Введите URL для проверки..." class="url-input">
+                        <i class="fas fa-link"></i>
+                        <input type="text" id="url-input" placeholder="Введите URL для проверки..." class="url-input" autocomplete="url">
                         <button id="analyze-btn" class="btn btn-primary"><i class="fas fa-search"></i> Проверить</button>
                     </div>
                     <div class="example-urls">
