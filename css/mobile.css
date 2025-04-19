@@ -1,0 +1,94 @@
+/* Mobile Styles for CorgPhish */
+
+/* Base mobile adjustments */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+/* Header mobile styles */
+header {
+  padding: 10px 0;
+}
+
+header nav {
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav ul {
+  margin-top: 15px;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+header nav ul li {
+  margin: 5px 0;
+}
+
+/* Main content adjustments */
+main section {
+  padding: 30px 0;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/* Documentation specific mobile styles */
+.docs-container {
+  padding: 30px 0;
+}
+
+.docs-sidebar {
+  margin-bottom: 20px;
+}
+
+.docs-content {
+  padding: 15px;
+}
+
+.docs-content pre {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Footer mobile styles */
+footer {
+  padding: 30px 0;
+}
+
+.footer-content {
+  flex-direction: column;
+}
+
+.footer-section {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Form elements and buttons */
+input, select, textarea {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+button, .btn {
+  width: 100%;
+  margin-bottom: 10px;
+} 

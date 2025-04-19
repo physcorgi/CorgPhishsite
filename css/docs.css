@@ -1,0 +1,175 @@
+/* Docs Page Styles */
+
+/* Grid system */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  width: 100%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  width: 100%;
+}
+
+/* Documentation container */
+.docs-container {
+  padding: 60px 0;
+  margin-bottom: 40px;
+}
+
+/* Sidebar styles */
+.docs-sidebar {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 20px;
+  position: sticky;
+  top: 100px;
+}
+
+.docs-sidebar h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.docs-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.docs-sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.docs-sidebar ul li a {
+  color: #555;
+  text-decoration: none;
+  display: block;
+  padding: 8px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.docs-sidebar ul li a:hover,
+.docs-sidebar ul li.active a {
+  background-color: #e9ecef;
+  color: #007bff;
+}
+
+/* Documentation content */
+.docs-content {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.docs-content h2 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.docs-content h2:not(:first-child) {
+  margin-top: 40px;
+}
+
+.docs-content h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #444;
+}
+
+.docs-content p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.docs-content pre {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+.docs-content code {
+  font-family: 'Courier New', Courier, monospace;
+  color: #e83e8c;
+}
+
+.docs-content .info-box {
+  background-color: #e3f2fd;
+  border-left: 4px solid #2196f3;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 0 4px 4px 0;
+}
+
+.docs-content .warning-box {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Syntax highlighting */
+.docs-content pre code {
+  color: #333;
+  display: block;
+  line-height: 1.5;
+}
+
+.docs-content code .keyword {
+  color: #0066cc;
+  font-weight: bold;
+}
+
+.docs-content code .string {
+  color: #008800;
+}
+
+.docs-content code .number {
+  color: #d14;
+}
+
+.docs-content code .comment {
+  color: #999;
+  font-style: italic;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .col-3, .col-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .docs-sidebar {
+    margin-bottom: 20px;
+    position: static;
+  }
+} 
