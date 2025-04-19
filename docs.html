@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документация - CorgPhish</title>
+    <link rel="stylesheet" href="css/desktop.min.css">
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 768px)">
+    <meta name="description" content="Полная документация по использованию системы защиты от фишинга CorgPhish">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">CorgPhish</a>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="docs.html" class="active">Документация</a></li>
+                    <li><a href="download.html">Скачать</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="docs-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 docs-sidebar">
+                        <h3>Разделы</h3>
+                        <ul>
+                            <li class="active"><a href="#overview">Обзор</a></li>
+                            <li><a href="#installation">Установка</a></li>
+                            <li><a href="#usage">Использование</a></li>
+                            <li><a href="#api">API</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-9 docs-content">
+                        <h2 id="overview">Обзор</h2>
+                        <p>CorgPhish - это интеллектуальная система защиты от фишинга, разработанная для обнаружения и предотвращения фишинговых атак. Система использует алгоритмы машинного обучения для анализа ссылок и веб-страниц, выявляя подозрительные и потенциально опасные сайты.</p>
+                        
+                        <div class="info-box">
+                            <p><strong>CorgPhish</strong> предназначен как для индивидуальных пользователей, так и для организаций, желающих повысить свою кибербезопасность.</p>
+                        </div>
+
+                        <h2 id="installation">Установка</h2>
+                        <p>Существует несколько способов установки и использования CorgPhish:</p>
+                        
+                        <h3>Для разработчиков</h3>
+                        <p>Клонируйте репозиторий и установите зависимости:</p>
+                        <pre><code>git clone https://github.com/physcorgi/CorgPhish.git
+cd CorgPhish
+pip install -r requirements.txt</code></pre>
+
+                        <h3>Для пользователей</h3>
+                        <p>Загрузите и установите приложение с нашей <a href="download.html">страницы загрузки</a>.</p>
+
+                        <h2 id="usage">Использование</h2>
+                        <p>После установки вы можете использовать CorgPhish следующими способами:</p>
+                        
+                        <h3>Браузерное расширение</h3>
+                        <p>После установки расширения в браузер, CorgPhish будет автоматически анализировать посещаемые вами сайты и предупреждать о подозрительных страницах.</p>
+                        
+                        <h3>Командная строка</h3>
+                        <p>Для проверки ссылки через командную строку:</p>
+                        <pre><code>corgphish check https://example.com</code></pre>
+
+                        <h2 id="api">API</h2>
+                        <p>CorgPhish предоставляет RESTful API для интеграции с другими приложениями.</p>
+                        
+                        <h3>Примеры запросов</h3>
+                        <pre><code>curl -X POST -H "Content-Type: application/json" -d '{"url": "https://example.com"}' https://api.corgphish.example.com/v1/check</code></pre>
+                        
+                        <h3>Ответ API</h3>
+                        <pre><code>{
+  "url": "https://example.com",
+  "is_phishing": false,
+  "confidence": 0.98,
+  "analysis": {
+    "domain_age": "12 years",
+    "ssl_valid": true,
+    "suspicious_patterns": 0
+  }
+}</code></pre>
+
+                        <h2 id="faq">Часто задаваемые вопросы</h2>
+                        
+                        <h3>Что такое фишинг?</h3>
+                        <p>Фишинг — это вид интернет-мошенничества, целью которого является получение доступа к конфиденциальным данным пользователей. Злоумышленники создают поддельные веб-сайты, имитирующие настоящие, чтобы украсть личные данные пользователей.</p>
+                        
+                        <h3>Как CorgPhish определяет фишинговые сайты?</h3>
+                        <p>CorgPhish использует комбинацию технологий машинного обучения, анализа URL, проверки SSL-сертификатов, анализа содержимого страницы и сравнения с базой данных известных фишинговых сайтов.</p>
+                        
+                        <h3>Совместим ли CorgPhish с моим браузером?</h3>
+                        <p>CorgPhish совместим с большинством популярных браузеров, включая Chrome, Firefox, Edge и Safari.</p>
+                        
+                        <h3>Как часто обновляется база данных фишинговых сайтов?</h3>
+                        <p>База данных обновляется несколько раз в день для обеспечения максимальной защиты от новейших угроз.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CorgPhish</h3>
+                    <p>Интеллектуальная система защиты от фишинга</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О проекте</a></li>
+                        <li><a href="docs.html">Документация</a></li>
+                        <li><a href="download.html">Скачать</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Документация</h3>
+                    <ul>
+                        <li><a href="#installation">Установка</a></li>
+                        <li><a href="#usage">Использование</a></li>
+                        <li><a href="#api">API</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Сообщество</h3>
+                    <ul>
+                        <li><a href="https://github.com/physcorgi/CorgPhish">GitHub</a></li>
+                        <li><a href="https://github.com/physcorgi/CorgPhish/blob/main/docs/CONTRIBUTING.md">Внести вклад</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CorgPhish. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
