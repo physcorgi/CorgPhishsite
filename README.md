@@ -18,7 +18,7 @@ website/
 
 1. Клонировать репозиторий:
 ```
-git clone https://github.com/physcorgi/CorgPhish.git
+git clone https://github.com/CorgPhish/Vsosh.git
 ```
 
 2. Открыть файл `website/index.html` в браузере
@@ -40,4 +40,4 @@ git clone https://github.com/physcorgi/CorgPhish.git
 
 ## Контакты
 
-Сайт создан для проекта [CorgPhish](https://github.com/physcorgi/CorgPhish). 
+Сайт создан для проекта [CorgPhish](https://github.com/CorgPhish/Vsosh). 
