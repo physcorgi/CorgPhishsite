@@ -202,129 +202,17 @@
     <section id="download" class="download">
         <div class="container">
             <h2>Скачать CorgPhish</h2>
-            <div class="download-options">
-                <div class="download-option">
-                    <div class="browser-icon">
-                        <i class="fab fa-chrome"></i>
-                    </div>
-                    <h3>Chrome Extension</h3>
-                    <p>Установите для Google Chrome, Brave, Edge и других Chrome-подобных браузеров</p>
-                    <a href="downloads/corgphish-extension-1.2.0.zip" class="btn btn-primary">Скачать для Chrome</a>
-                    <a href="https://chrome.google.com/webstore/detail/corgphish/fakeextensionid" target="_blank" class="btn btn-outline">Chrome Web Store</a>
-                </div>
-                <div class="download-option">
-                    <div class="browser-icon">
-                        <i class="fab fa-firefox"></i>
-                    </div>
-                    <h3>Firefox Add-on</h3>
-                    <p>Установите для Mozilla Firefox и Firefox-подобных браузеров</p>
-                    <a href="downloads/corgphish-extension-1.2.0.zip" class="btn btn-primary">Скачать для Firefox</a>
-                    <a href="https://addons.mozilla.org/en-US/firefox/addon/corgphish/" target="_blank" class="btn btn-outline">Firefox Add-ons</a>
-                </div>
-            </div>
-            <div class="manual-install">
-                <h3>Другие платформы</h3>
-                <div class="other-platforms">
-                    <a href="downloads/corgphish-win-1.2.0.exe" class="platform-link">
-                        <i class="fab fa-windows"></i>
-                        <span>Windows</span>
-                    </a>
-                    <a href="downloads/corgphish-mac-1.2.0.dmg" class="platform-link">
-                        <i class="fab fa-apple"></i>
-                        <span>macOS</span>
-                    </a>
-                    <a href="downloads/corgphish-linux-1.2.0.deb" class="platform-link">
-                        <i class="fab fa-linux"></i>
-                        <span>Linux (Deb)</span>
-                    </a>
-                    <a href="downloads/corgphish-linux-1.2.0.rpm" class="platform-link">
-                        <i class="fab fa-fedora"></i>
-                        <span>Linux (RPM)</span>
-                    </a>
-                </div>
-                <a href="docs/INSTALLATION.md" class="btn btn-outline">Подробная инструкция</a>
-            </div>
+
             
             <!-- Installation Guide Tabs from download.html -->
             <div class="installation-guide">
                 <h3>Инструкция по установке</h3>
                 <div class="installation-tabs">
                     <div class="tab-navigation">
-                        <button class="tab-btn active" data-tab="windows-tab">Windows</button>
-                        <button class="tab-btn" data-tab="macos-tab">macOS</button>
-                        <button class="tab-btn" data-tab="linux-tab">Linux</button>
                         <button class="tab-btn" data-tab="browser-tab">Браузерные расширения</button>
                     </div>
                     
-                    <!-- Windows Tab -->
-                    <div id="windows-tab" class="tab-content active">
-                        <div class="installation-step">
-                            <h4 data-number="1">1. Скачайте установщик</h4>
-                            <p>Нажмите кнопку "Скачать для Windows" выше, чтобы получить последнюю версию.</p>
-                        </div>
-                        <div class="installation-step">
-                            <h4 data-number="2">2. Запустите установщик</h4>
-                            <p>Запустите скачанный .exe файл с правами администратора.</p>
-                        </div>
-                        <div class="installation-step">
-                            <h4 data-number="3">3. Следуйте инструкциям установщика</h4>
-                            <p>Примите лицензионное соглашение и выберите директорию установки.</p>
-                        </div>
-                        <div class="installation-step">
-                            <h4 data-number="4">4. Завершите установку</h4>
-                            <p>После завершения установки запустите программу с рабочего стола или из меню Пуск.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- macOS Tab -->
-                    <div id="macos-tab" class="tab-content">
-                        <div class="installation-step">
-                            <h4 data-number="1">1. Скачайте DMG файл</h4>
-                            <p>Нажмите кнопку "Скачать для macOS" выше, чтобы получить последнюю версию.</p>
-                        </div>
-                        <div class="installation-step">
-                            <h4 data-number="2">2. Откройте DMG файл</h4>
-                            <p>Дважды кликните по скачанному .dmg файлу, чтобы смонтировать его.</p>
-                        </div>
-                        <div class="installation-step">
-                            <h4 data-number="3">3. Установите CorgPhish</h4>
-                            <p>Перетащите приложение CorgPhish в папку Applications.</p>
-                        </div>
-                        <div class="installation-step">
-                            <h4 data-number="4">4. Первый запуск</h4>
-                            <p>Кликните правой кнопкой мыши на приложении и выберите "Открыть", чтобы обойти предупреждения Gatekeeper при первом запуске.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Linux Tab -->
-                    <div id="linux-tab" class="tab-content">
-                        <div class="installation-step">
-                            <h4 data-number="1">1. Скачайте пакет</h4>
-                            <p>Нажмите кнопку "Скачать для Linux" выше, чтобы получить последнюю версию .deb пакета.</p>
-                        </div>
-                        <div class="installation-step">
-                            <h4 data-number="2">2. Установка с помощью apt (Debian/Ubuntu)</h4>
-                            <div class="code-block">
-                                <code>sudo apt install ./corgphish-linux-1.2.0.deb</code>
-                                <button class="copy-command" data-command="sudo apt install ./corgphish-linux-1.2.0.deb">Копировать</button>
-                            </div>
-                        </div>
-                        <div class="installation-step">
-                            <h4 data-number="3">3. Или установка с помощью RPM (Fedora/RHEL)</h4>
-                            <div class="code-block">
-                                <code>sudo rpm -i corgphish-linux-1.2.0.rpm</code>
-                                <button class="copy-command" data-command="sudo rpm -i corgphish-linux-1.2.0.rpm">Копировать</button>
-                            </div>
-                        </div>
-                        <div class="installation-step">
-                            <h4 data-number="4">4. Запуск из терминала</h4>
-                            <div class="code-block">
-                                <code>corgphish</code>
-                                <button class="copy-command" data-command="corgphish">Копировать</button>
-                            </div>
-                        </div>
-                    </div>
-                    
+
                     <!-- Browser Extension Tab -->
                     <div id="browser-tab" class="tab-content">
                         <div class="installation-step">
@@ -345,46 +233,14 @@
                         <div class="installation-step">
                             <h4 data-number="4">4. Ручная установка</h4>
                             <p>Вы также можете скачать файлы расширения напрямую и установить их вручную:</p>
-                            <a href="downloads/corgphish-extension-1.2.0.zip" class="btn btn-primary">Скачать пакет расширения</a>
+                            <a href="https://github.com/CorgPhish/Vsosh/releases/tag/1.0.0" class="btn btn-primary">Скачать пакет расширения</a>
                         </div>
                     </div>
                 </div>
             </div>
             
             <!-- FAQ Section -->
-            <div class="download-faq">
-                <h3>Часто задаваемые вопросы</h3>
-                <div class="faq-items">
-                    <div class="faq-item">
-                        <div class="faq-question">Является ли CorgPhish бесплатным?</div>
-                        <div class="faq-answer">
-                            <p>Да, CorgPhish полностью бесплатен и имеет открытый исходный код. Вы можете использовать его для личных или коммерческих целей без каких-либо ограничений.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">Как CorgPhish обнаруживает фишинговые попытки?</div>
-                        <div class="faq-answer">
-                            <p>CorgPhish использует комбинацию алгоритмов машинного обучения, анализа URL, проверки содержимого и обнаружения визуального сходства для идентификации потенциальных фишинговых попыток.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">Собирает ли CorgPhish мои личные данные?</div>
-                        <div class="faq-answer">
-                            <p>CorgPhish уважает вашу приватность. По умолчанию он собирает только анонимную статистику использования для улучшения сервиса. Вы можете отказаться от этого сбора данных в настройках.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question">Могу ли я использовать CorgPhish в своей компании?</div>
-                        <div class="faq-answer">
-                            <p>Абсолютно! CorgPhish может быть развернут по всей вашей организации для защиты всех сотрудников. Для корпоративных развертываний с централизованным управлением, пожалуйста, свяжитесь с нами.</p>
-                        </div>
-                    </div>
-                </div>
-                <a href="download.html" class="btn btn-outline">Подробнее о загрузке и установке</a>
-            </div>
+
         </div>
     </section>
 
@@ -463,7 +319,9 @@
             </div>
         </div>
     </section>
-
+    <div class="download-faq">
+        <a href="download.html" class="btn btn-outline">Подробнее о загрузке и установке</a>
+    </div>
     <footer>
         <div class="container">
             <div class="footer-content">
