@@ -8,6 +8,44 @@
     <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="css/mobile.css" media="(max-width: 768px)">
     <meta name="description" content="Полная документация по использованию системы защиты от фишинга CorgPhish">
+    <style>
+        .github-link {
+            display: inline-block;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background-color: #24292e;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .github-link:hover {
+            background-color: #0366d6;
+        }
+        .doc-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .doc-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .doc-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,6 +59,7 @@
                     <li><a href="download.html">Скачать</a></li>
                 </ul>
             </nav>
+            <a href="https://github.com/physcorgi/CorgPhish" class="github-link" target="_blank">GitHub</a>
         </div>
     </header>
 
@@ -37,6 +76,16 @@
                             <li><a href="#api">API</a></li>
                             <li><a href="#faq">FAQ</a></li>
                         </ul>
+                        
+                        <h3 style="margin-top: 30px;">Полная документация</h3>
+                        <div class="doc-buttons">
+                            <a href="docs/INSTALLATION.md" class="doc-button">Установка</a>
+                            <a href="docs/guides/USER_GUIDE.md" class="doc-button">Руководство пользователя</a>
+                            <a href="docs/guides/DEVELOPER_GUIDE.md" class="doc-button">Руководство разработчика</a>
+                            <a href="docs/PROJECT_DOCUMENTATION.md" class="doc-button">Техническая документация</a>
+                            <a href="docs/CONTRIBUTING.md" class="doc-button">Как внести вклад</a>
+                            <a href="docs/CODE_OF_CONDUCT.md" class="doc-button">Кодекс поведения</a>
+                        </div>
                     </div>
                     <div class="col-9 docs-content">
                         <h2 id="overview">Обзор</h2>
@@ -44,6 +93,10 @@
                         
                         <div class="info-box">
                             <p><strong>CorgPhish</strong> предназначен как для индивидуальных пользователей, так и для организаций, желающих повысить свою кибербезопасность.</p>
+                        </div>
+
+                        <div class="doc-buttons">
+                            <a href="https://github.com/physcorgi/CorgPhish" class="doc-button" style="background-color: #24292e;">Исходный код на GitHub</a>
                         </div>
 
                         <h2 id="installation">Установка</h2>
@@ -99,6 +152,12 @@ pip install -r requirements.txt</code></pre>
                         
                         <h3>Как часто обновляется база данных фишинговых сайтов?</h3>
                         <p>База данных обновляется несколько раз в день для обеспечения максимальной защиты от новейших угроз.</p>
+
+                        <div class="doc-buttons" style="margin-top: 40px;">
+                            <a href="docs/INSTALLATION.md" class="doc-button">Подробная инструкция по установке</a>
+                            <a href="docs/guides/USER_GUIDE.md" class="doc-button">Полное руководство пользователя</a>
+                            <a href="docs/PROJECT_DOCUMENTATION.md" class="doc-button">Техническая документация</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -111,6 +170,11 @@ pip install -r requirements.txt</code></pre>
                 <div class="footer-section">
                     <h3>CorgPhish</h3>
                     <p>Интеллектуальная система защиты от фишинга</p>
+                    <p style="margin-top: 10px;">
+                        <a href="https://github.com/physcorgi/CorgPhish" style="display: inline-block; font-weight: bold; color: #0366d6;">
+                            GitHub Репозиторий
+                        </a>
+                    </p>
                 </div>
                 <div class="footer-section">
                     <h3>Навигация</h3>
@@ -124,17 +188,18 @@ pip install -r requirements.txt</code></pre>
                 <div class="footer-section">
                     <h3>Документация</h3>
                     <ul>
-                        <li><a href="#installation">Установка</a></li>
-                        <li><a href="#usage">Использование</a></li>
-                        <li><a href="#api">API</a></li>
-                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="docs/INSTALLATION.md">Установка</a></li>
+                        <li><a href="docs/guides/USER_GUIDE.md">Руководство пользователя</a></li>
+                        <li><a href="docs/guides/DEVELOPER_GUIDE.md">Руководство разработчика</a></li>
+                        <li><a href="docs/PROJECT_DOCUMENTATION.md">Техническая документация</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>Сообщество</h3>
                     <ul>
                         <li><a href="https://github.com/physcorgi/CorgPhish">GitHub</a></li>
-                        <li><a href="https://github.com/physcorgi/CorgPhish/blob/main/docs/CONTRIBUTING.md">Внести вклад</a></li>
+                        <li><a href="docs/CONTRIBUTING.md">Внести вклад</a></li>
+                        <li><a href="docs/CODE_OF_CONDUCT.md">Кодекс поведения</a></li>
                     </ul>
                 </div>
             </div>

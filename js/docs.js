@@ -52,6 +52,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // Обработка клика по кнопкам документации
+    document.querySelectorAll('.doc-button').forEach(button => {
+        button.addEventListener('click', function(e) {
+            // Если ссылка ведет на Markdown файл, открываем в новой вкладке
+            if (this.getAttribute('href').endsWith('.md')) {
+                e.preventDefault();
+                window.open(this.getAttribute('href'), '_blank');
+            }
+        });
+    });
+    
     // Инициализация подсветки синтаксиса в блоках кода
     document.querySelectorAll('pre code').forEach(block => {
         // Простая подсветка синтаксиса без зависимостей
