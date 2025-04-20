@@ -317,125 +317,157 @@ body {
 .download-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 30px;
+    margin-top: 40px;
 }
 
 .download-card {
     background-color: var(--white);
-    border-radius: var(--radius-lg);
+    border-radius: 12px;
+    box-shadow: var(--shadow-medium);
     overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: all var(--transition-normal);
-    border: 1px solid var(--gray-200);
-}
-
-.download-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--primary-light);
-}
-
-.download-card-header {
-    padding: 2rem;
-    background: linear-gradient(45deg, var(--gray-100), var(--white));
-    border-bottom: 1px solid var(--gray-200);
-    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
 }
 
-.download-card-header::after {
-    content: '';
+.download-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-large);
+}
+
+.download-card-header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: var(--white);
+    padding: 20px;
+    position: relative;
+}
+
+.version-badge {
     position: absolute;
-    bottom: -1px;
-    left: 10%;
-    width: 80%;
-    height: 3px;
-    background: linear-gradient(90deg, var(--primary-light), var(--primary), var(--primary-dark));
-    border-radius: var(--radius-full);
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.version-badge.latest {
+    background-color: var(--success-bg);
+    color: var(--white);
 }
 
 .download-card-header h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: var(--gray-900);
+    margin: 0 0 5px 0;
+    font-size: 24px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
+    gap: 10px;
 }
 
 .download-card-header h3 i {
-    font-size: 1.75rem;
-}
-
-.download-card-header .fa-windows {
-    color: #0078d7;
-}
-
-.download-card-header .fa-apple {
-    color: #000000;
-}
-
-.download-card-header .fa-linux {
-    color: #FCC624;
+    font-size: 28px;
 }
 
 .download-card-header p {
-    font-size: 1rem;
-    color: var(--gray-600);
     margin: 0;
+    opacity: 0.9;
 }
 
 .download-card-body {
-    padding: 2rem;
+    padding: 20px;
+}
+
+.card-img {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-small);
+}
+
+.card-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
 .download-card-body ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 2rem;
+    margin: 0 0 20px 0;
 }
 
 .download-card-body ul li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--gray-700);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.download-card-body ul li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: var(--primary);
-    font-weight: bold;
+.download-card-body ul li i {
+    color: var(--success);
+    font-size: 16px;
+}
+
+.download-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: var(--text-light);
+    padding: 10px;
+    background-color: var(--light-bg);
+    border-radius: 8px;
 }
 
 .download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     width: 100%;
-    padding: 0.75rem 1.5rem;
-    border-radius: var(--radius);
-    border: none;
+    padding: 14px 20px;
     background-color: var(--primary);
     color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: all var(--transition-fast);
-    margin-bottom: 1rem;
-    font-size: 1rem;
+    transition: background-color 0.2s ease;
 }
 
 .download-btn:hover {
     background-color: var(--primary-dark);
-    box-shadow: var(--shadow-md);
 }
 
-.download-version {
-    display: block;
-    text-align: center;
-    font-size: 0.875rem;
-    color: var(--gray-500);
+.download-btn i {
+    font-size: 18px;
+}
+
+.alternative-downloads {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.alt-download {
+    font-size: 14px;
+    color: var(--primary);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: var(--light-bg);
+    transition: background-color 0.2s ease;
+}
+
+.alt-download:hover {
+    background-color: var(--primary-light);
+    color: var(--white);
 }
 
 /* Installation Guide Section */

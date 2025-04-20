@@ -210,6 +210,7 @@
                     <h3>Chrome Extension</h3>
                     <p>Установите для Google Chrome, Brave, Edge и других Chrome-подобных браузеров</p>
                     <a href="downloads/corgphish-extension-1.2.0.zip" class="btn btn-primary">Скачать для Chrome</a>
+                    <a href="https://chrome.google.com/webstore/detail/corgphish/fakeextensionid" target="_blank" class="btn btn-outline">Chrome Web Store</a>
                 </div>
                 <div class="download-option">
                     <div class="browser-icon">
@@ -218,6 +219,7 @@
                     <h3>Firefox Add-on</h3>
                     <p>Установите для Mozilla Firefox и Firefox-подобных браузеров</p>
                     <a href="downloads/corgphish-extension-1.2.0.zip" class="btn btn-primary">Скачать для Firefox</a>
+                    <a href="https://addons.mozilla.org/en-US/firefox/addon/corgphish/" target="_blank" class="btn btn-outline">Firefox Add-ons</a>
                 </div>
             </div>
             <div class="manual-install">
@@ -242,6 +244,147 @@
                 </div>
                 <a href="docs/INSTALLATION.md" class="btn btn-outline">Подробная инструкция</a>
             </div>
+            
+            <!-- Installation Guide Tabs from download.html -->
+            <div class="installation-guide">
+                <h3>Инструкция по установке</h3>
+                <div class="installation-tabs">
+                    <div class="tab-navigation">
+                        <button class="tab-btn active" data-tab="windows-tab">Windows</button>
+                        <button class="tab-btn" data-tab="macos-tab">macOS</button>
+                        <button class="tab-btn" data-tab="linux-tab">Linux</button>
+                        <button class="tab-btn" data-tab="browser-tab">Браузерные расширения</button>
+                    </div>
+                    
+                    <!-- Windows Tab -->
+                    <div id="windows-tab" class="tab-content active">
+                        <div class="installation-step">
+                            <h4 data-number="1">1. Скачайте установщик</h4>
+                            <p>Нажмите кнопку "Скачать для Windows" выше, чтобы получить последнюю версию.</p>
+                        </div>
+                        <div class="installation-step">
+                            <h4 data-number="2">2. Запустите установщик</h4>
+                            <p>Запустите скачанный .exe файл с правами администратора.</p>
+                        </div>
+                        <div class="installation-step">
+                            <h4 data-number="3">3. Следуйте инструкциям установщика</h4>
+                            <p>Примите лицензионное соглашение и выберите директорию установки.</p>
+                        </div>
+                        <div class="installation-step">
+                            <h4 data-number="4">4. Завершите установку</h4>
+                            <p>После завершения установки запустите программу с рабочего стола или из меню Пуск.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- macOS Tab -->
+                    <div id="macos-tab" class="tab-content">
+                        <div class="installation-step">
+                            <h4 data-number="1">1. Скачайте DMG файл</h4>
+                            <p>Нажмите кнопку "Скачать для macOS" выше, чтобы получить последнюю версию.</p>
+                        </div>
+                        <div class="installation-step">
+                            <h4 data-number="2">2. Откройте DMG файл</h4>
+                            <p>Дважды кликните по скачанному .dmg файлу, чтобы смонтировать его.</p>
+                        </div>
+                        <div class="installation-step">
+                            <h4 data-number="3">3. Установите CorgPhish</h4>
+                            <p>Перетащите приложение CorgPhish в папку Applications.</p>
+                        </div>
+                        <div class="installation-step">
+                            <h4 data-number="4">4. Первый запуск</h4>
+                            <p>Кликните правой кнопкой мыши на приложении и выберите "Открыть", чтобы обойти предупреждения Gatekeeper при первом запуске.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Linux Tab -->
+                    <div id="linux-tab" class="tab-content">
+                        <div class="installation-step">
+                            <h4 data-number="1">1. Скачайте пакет</h4>
+                            <p>Нажмите кнопку "Скачать для Linux" выше, чтобы получить последнюю версию .deb пакета.</p>
+                        </div>
+                        <div class="installation-step">
+                            <h4 data-number="2">2. Установка с помощью apt (Debian/Ubuntu)</h4>
+                            <div class="code-block">
+                                <code>sudo apt install ./corgphish-linux-1.2.0.deb</code>
+                                <button class="copy-command" data-command="sudo apt install ./corgphish-linux-1.2.0.deb">Копировать</button>
+                            </div>
+                        </div>
+                        <div class="installation-step">
+                            <h4 data-number="3">3. Или установка с помощью RPM (Fedora/RHEL)</h4>
+                            <div class="code-block">
+                                <code>sudo rpm -i corgphish-linux-1.2.0.rpm</code>
+                                <button class="copy-command" data-command="sudo rpm -i corgphish-linux-1.2.0.rpm">Копировать</button>
+                            </div>
+                        </div>
+                        <div class="installation-step">
+                            <h4 data-number="4">4. Запуск из терминала</h4>
+                            <div class="code-block">
+                                <code>corgphish</code>
+                                <button class="copy-command" data-command="corgphish">Копировать</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Browser Extension Tab -->
+                    <div id="browser-tab" class="tab-content">
+                        <div class="installation-step">
+                            <h4 data-number="1">1. Расширение для Chrome</h4>
+                            <p>Установите напрямую из Chrome Web Store:</p>
+                            <a href="https://chrome.google.com/webstore/detail/corgphish/fakeextensionid" target="_blank" class="btn btn-outline">Chrome Web Store</a>
+                        </div>
+                        <div class="installation-step">
+                            <h4 data-number="2">2. Дополнение для Firefox</h4>
+                            <p>Установите напрямую из Firefox Add-ons:</p>
+                            <a href="https://addons.mozilla.org/en-US/firefox/addon/corgphish/" target="_blank" class="btn btn-outline">Firefox Add-ons</a>
+                        </div>
+                        <div class="installation-step">
+                            <h4 data-number="3">3. Расширение для Edge</h4>
+                            <p>Установите напрямую из Microsoft Store:</p>
+                            <a href="https://microsoftedge.microsoft.com/addons/detail/corgphish/fakeextensionid" target="_blank" class="btn btn-outline">Microsoft Store</a>
+                        </div>
+                        <div class="installation-step">
+                            <h4 data-number="4">4. Ручная установка</h4>
+                            <p>Вы также можете скачать файлы расширения напрямую и установить их вручную:</p>
+                            <a href="downloads/corgphish-extension-1.2.0.zip" class="btn btn-primary">Скачать пакет расширения</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Section -->
+            <div class="download-faq">
+                <h3>Часто задаваемые вопросы</h3>
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <div class="faq-question">Является ли CorgPhish бесплатным?</div>
+                        <div class="faq-answer">
+                            <p>Да, CorgPhish полностью бесплатен и имеет открытый исходный код. Вы можете использовать его для личных или коммерческих целей без каких-либо ограничений.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Как CorgPhish обнаруживает фишинговые попытки?</div>
+                        <div class="faq-answer">
+                            <p>CorgPhish использует комбинацию алгоритмов машинного обучения, анализа URL, проверки содержимого и обнаружения визуального сходства для идентификации потенциальных фишинговых попыток.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Собирает ли CorgPhish мои личные данные?</div>
+                        <div class="faq-answer">
+                            <p>CorgPhish уважает вашу приватность. По умолчанию он собирает только анонимную статистику использования для улучшения сервиса. Вы можете отказаться от этого сбора данных в настройках.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Могу ли я использовать CorgPhish в своей компании?</div>
+                        <div class="faq-answer">
+                            <p>Абсолютно! CorgPhish может быть развернут по всей вашей организации для защиты всех сотрудников. Для корпоративных развертываний с централизованным управлением, пожалуйста, свяжитесь с нами.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="download.html" class="btn btn-outline">Подробнее о загрузке и установке</a>
+            </div>
         </div>
     </section>
 
@@ -249,7 +392,7 @@
         <div class="container">
             <h2>Документация</h2>
             <div class="docs-cards">
-                <a href="docs/guides/USER_GUIDE.md" class="doc-card">
+                <a href="https://github.com/CorgPhish/Vsosh/blob/main/docs/guides/user_guide.md" class="doc-card">
                     <div class="doc-icon"><i class="fas fa-book-reader"></i></div>
                     <h3>Руководство пользователя</h3>
                     <p>Узнайте, как использовать все возможности расширения CorgPhish</p>
@@ -259,7 +402,7 @@
                     <h3>Руководство по установке</h3>
                     <p>Подробные инструкции по установке для различных браузеров</p>
                 </a>
-                <a href="docs/guides/DEVELOPER_GUIDE.md" class="doc-card">
+                <a href="https://github.com/CorgPhish/Vsosh/blob/main/docs/guides/developer_guide.md" class="doc-card">
                     <div class="doc-icon"><i class="fas fa-code"></i></div>
                     <h3>Руководство разработчика</h3>
                     <p>Информация для тех, кто хочет внести вклад в проект</p>
@@ -284,16 +427,13 @@
                         <li><i class="fas fa-check-circle"></i> Пользовательский интерфейс</li>
                         <li><i class="fas fa-check-circle"></i> Демонстрационная среда</li>
                         <li><i class="fas fa-check-circle"></i> Реорганизация структуры проекта</li>
-                        <li><i class="fas fa-check-circle"></i> Режим "Глубокого сканирования"</li>
-                        <li><i class="fas fa-check-circle"></i> Интеграция с Google Safe Browsing API</li>
                         <li><i class="fas fa-check-circle"></i> Аналитика фишинговых угроз</li>
-                        <li><i class="fas fa-check-circle"></i> Переработанный интерфейс настроек</li>
+                        <li><i class="fas fa-clock"></i> История проверок</li>
                     </ul>
                 </div>
                 <div class="timeline-section upcoming">
                     <h3>В разработке</h3>
                     <ul class="timeline-list">
-                        <li><i class="fas fa-clock"></i> История проверок с возможностью экспорта</li>
                         <li><i class="fas fa-clock"></i> Централизованная база данных фишинговых образцов</li>
                         <li><i class="fas fa-clock"></i> Географическая статистика угроз</li>
                         <li><i class="fas fa-clock"></i> Локализация на дополнительные языки</li>
@@ -317,21 +457,9 @@
                     <div class="contact-item">
                         <i class="fas fa-globe"></i>
                         <h3>Сайт</h3>
-                        <p>www.corgphish.com</p>
+                        <p>https://corgphish.ru</p>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Ваш email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Отправить сообщение</button>
-                </form>
             </div>
         </div>
     </section>
@@ -371,5 +499,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html> 
